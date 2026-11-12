@@ -1,0 +1,870 @@
+{
+  "schemaVersion": 3,
+  "religions": [
+    {
+      "id": "hinduism",
+      "name": "Hinduism",
+      "summary": "Ancient dharmic tradition of the Indian subcontinent.",
+      "emblem": "ॐ",
+      "tintKey": "saffron",
+      "sortOrder": 0
+    }
+  ],
+  "sources": [
+    {
+      "id": "besant-1922",
+      "name": "The Bhagavad-Gita, tr. Annie Besant, 4th ed. (1922), via Wikisource",
+      "url": "https://en.wikisource.org/wiki/Bhagavad-Gita_(Besant_4th)",
+      "license": "Public domain",
+      "attribution": "Translated by Annie Besant (1847–1933). Sanskrit text as printed in the same edition."
+    }
+  ],
+  "collections": [
+    {
+      "id": "bhagavad-gita",
+      "religionID": "hinduism",
+      "name": "Bhagavad Gita",
+      "structureDescription": "18 chapters and verses",
+      "languages": [
+        "sa",
+        "en"
+      ],
+      "availability": "downloaded",
+      "originalLanguage": "sa",
+      "originalSourceID": "besant-1922",
+      "defaultTranslationID": "gita-besant"
+    }
+  ],
+  "translations": [
+    {
+      "id": "gita-besant",
+      "collectionID": "bhagavad-gita",
+      "name": "Annie Besant (1922)",
+      "languageCode": "en",
+      "translator": "Annie Besant",
+      "year": 1922,
+      "sourceID": "besant-1922"
+    }
+  ],
+  "books": [
+    {
+      "id": "gita",
+      "collectionID": "bhagavad-gita",
+      "title": "Bhagavad Gita",
+      "division": "Bhishma Parva, Mahabharata",
+      "sequence": 1
+    }
+  ],
+  "sections": [
+    {
+      "id": "gita.ch2",
+      "bookID": "gita",
+      "title": "Chapter 2",
+      "sequence": 2
+    }
+  ],
+  "themes": [
+    {
+      "id": "action-consequence",
+      "name": "Action and Its Fruits"
+    }
+  ],
+  "passages": [
+    {
+      "id": "gita.2.1",
+      "sectionID": "gita.ch2",
+      "sequence": 1,
+      "reference": "Bhagavad Gita 2.1",
+      "originalText": "सञ्जय उवाच ।\nतं तथा कृपयाऽऽविष्टमश्रुपूर्णाकुलेक्षणम् ।\nविषीदन्तमिदं वाक्यमुवाच मधुसूदनः ॥ १ ॥",
+      "texts": {
+        "gita-besant": "Sanjaya said: To him thus with pity overcome, with smarting brimming eyes, despondent, Madhusûdana spake these words:"
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.2",
+      "sectionID": "gita.ch2",
+      "sequence": 2,
+      "reference": "Bhagavad Gita 2.2",
+      "originalText": "कुतस्त्वा कश्मलमिदं विषमे समुपस्थितम् ।\nअनार्यजुष्टमस्वर्ग्यमकीर्तिकरमर्जुन ॥ २ ॥",
+      "texts": {
+        "gita-besant": "The Blessed Lord said: Whence hath this dejection befallen thee in this perilous strait, ignoble, heaven-closing, infamous, O Arjuna?"
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.3",
+      "sectionID": "gita.ch2",
+      "sequence": 3,
+      "reference": "Bhagavad Gita 2.3",
+      "originalText": "क्लैव्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते ।\nक्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ट परन्तप ॥ ३ ॥",
+      "texts": {
+        "gita-besant": "Yield not to impotence, O Partha! it doth not befit thee. Shake off this paltry faint-heartedness! Stand up, Parantapa!"
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.4",
+      "sectionID": "gita.ch2",
+      "sequence": 4,
+      "reference": "Bhagavad Gita 2.4",
+      "originalText": "अर्जुन उवाच ।\nकथं भीष्ममहं सङ्ख्ये द्रोणं च मधुसूदन ।\nइषुभिः प्रतियोत्स्यामि पूजार्हावरिसूदन ॥ ४ ॥",
+      "texts": {
+        "gita-besant": "Arjuna said: How, O Madhusûdana, shall I attack Bhîshma and Drona with arrows in battle, they who are worthy of reverence, O slayer of foes?"
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.5",
+      "sectionID": "gita.ch2",
+      "sequence": 5,
+      "reference": "Bhagavad Gita 2.5",
+      "originalText": "गुरूनहत्वा हि महानुभावान् श्रेयो भोक्तुं भैक्ष्यमपीह लोके ।\nहत्वाऽर्थकामांस्तु गुरूनिहैव भुञ्जीय भोगान्रुधिरप्रदिग्धान् ॥ ५ ॥",
+      "texts": {
+        "gita-besant": "Better in this world to eat even the beggar's crust than to slay these most noble Gurus. Slaying these Gurus, our well-wishers, I should taste of blood-besprinkled feasts."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.6",
+      "sectionID": "gita.ch2",
+      "sequence": 6,
+      "reference": "Bhagavad Gita 2.6",
+      "originalText": "न चैतद्विद्मः कतरन्नो गरीयो यद्वा जयेम यदि वा नो जयेयुः ।\nयानेव हत्वा न जिजीविषाम: तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः ॥ ६ ॥",
+      "texts": {
+        "gita-besant": "Nor know I which for us be the better, that we conquer them or they conquer us—these, whom having slain we should not care to live, even these arrayed against us, the sons of Dhritarâshtra."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.7",
+      "sectionID": "gita.ch2",
+      "sequence": 7,
+      "reference": "Bhagavad Gita 2.7",
+      "originalText": "कार्पण्यदोषोपहतस्वभावः पृच्छामि त्वां धर्मसम्मूढचेताः ।\nयच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्मे शिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम् ॥ ७ ॥",
+      "texts": {
+        "gita-besant": "My heart is weighed down with the vice of faintness; my mind is confused as to duty. I ask thee which may be the better—that tell me decisively. I am thy disciple, suppliant to Thee; teach me."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.8",
+      "sectionID": "gita.ch2",
+      "sequence": 8,
+      "reference": "Bhagavad Gita 2.8",
+      "originalText": "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम् ।\nअवाप्य भूमावसपत्नमृद्धं राज्यं सुराणामपि चाधिपत्यम् ॥ ८ ॥",
+      "texts": {
+        "gita-besant": "For I see not that it would drive away this anguish that withers up my senses, if I should attain unrivalled monarchy on earth, or even the sovereignty of the Shining Ones."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.9",
+      "sectionID": "gita.ch2",
+      "sequence": 9,
+      "reference": "Bhagavad Gita 2.9",
+      "originalText": "सञ्जय उवाच ।\nएवमुक्त्वा हृषीकेशं गुडाकेशः परन्तपः ।\nन योत्स्य इति गोविन्दमुक्त्वा तूष्णीं बभूव ह ॥ ९ ॥",
+      "texts": {
+        "gita-besant": "Sanjaya said: Gudâkesha, conqueror of his foes, having thus addressed Hrishîkesha and said to Govinda, \"I will not fight!\", became silent."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.10",
+      "sectionID": "gita.ch2",
+      "sequence": 10,
+      "reference": "Bhagavad Gita 2.10",
+      "originalText": "तमुवाच हृषीकेशः प्रहसन्निव भारत ।\nसेनयोरुभयोर्मध्ये विषीदन्तमिदं वचः ॥ १० ॥",
+      "texts": {
+        "gita-besant": "Then Hrishîkesha, smiling, as it were, O Bhârata, spake these words to him, despondent, in the midst of the two armies:"
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.11",
+      "sectionID": "gita.ch2",
+      "sequence": 11,
+      "reference": "Bhagavad Gita 2.11",
+      "originalText": "अशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे ।\nगतासूनगतासूंश्च नानुशोचन्ति पण्डिताः ॥ ११ ॥",
+      "texts": {
+        "gita-besant": "The Blessed Lord said: Thou grievest for those that should not be grieved for, yet speakest words of wisdom. The wise grieve neither for the living nor for the dead."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.12",
+      "sectionID": "gita.ch2",
+      "sequence": 12,
+      "reference": "Bhagavad Gita 2.12",
+      "originalText": "न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः ।\nन चैव न भविष्यामः सर्वे वयमतः परम् ॥ १२ ॥",
+      "texts": {
+        "gita-besant": "Nor at any time verily was I not, nor thou, nor these princes of men, nor verily shall we ever cease to be, hereafter."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.13",
+      "sectionID": "gita.ch2",
+      "sequence": 13,
+      "reference": "Bhagavad Gita 2.13",
+      "originalText": "देहिनोऽस्मिन्यथा देहे कौमारं यौवनं जरा ।\nतथा देहान्तरप्राप्तिर्धीरस्तत्र न मुह्यति ॥ १३ ॥",
+      "texts": {
+        "gita-besant": "As the dweller in the body experienceth in the body childhood, youth, old age, so passeth he on to another body; the steadfast one grieveth not thereat."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.14",
+      "sectionID": "gita.ch2",
+      "sequence": 14,
+      "reference": "Bhagavad Gita 2.14",
+      "originalText": "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः ।\nआगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥ १४ ॥",
+      "texts": {
+        "gita-besant": "The contacts of matter, O son of Kuntî, giving cold and heat, pleasure and pain, they come and go, impermanent; endure them bravely, O Bhârata."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.15",
+      "sectionID": "gita.ch2",
+      "sequence": 15,
+      "reference": "Bhagavad Gita 2.15",
+      "originalText": "यं हि न व्यथयन्त्येते पुरुषं पुरुषर्षभ ।\nसमदुःखसुखं धीरं सोऽमृतत्वाय कल्पते ॥ १५ ॥",
+      "texts": {
+        "gita-besant": "The man whom these torment not, O chief of men, balanced in pain and pleasure, steadfast, he is fitted for immortality."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.16",
+      "sectionID": "gita.ch2",
+      "sequence": 16,
+      "reference": "Bhagavad Gita 2.16",
+      "originalText": "नासतो विद्यते भावो नाभावो विद्यते सतः ।\nउभयोरपि दृष्टोऽन्तस्त्वनयोस्तत्त्वदर्शिभिः ॥ १६ ॥",
+      "texts": {
+        "gita-besant": "The unreal hath no being; the real never ceaseth to be; the truth about both hath been perceived by the seers of the essence of things."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.17",
+      "sectionID": "gita.ch2",
+      "sequence": 17,
+      "reference": "Bhagavad Gita 2.17",
+      "originalText": "अविनाशि तु तद्विद्धि येन सर्वमिदं ततम् ।\nविनाशमव्ययस्यास्य न कश्चित्कर्तुमर्हति ॥ १७ ॥",
+      "texts": {
+        "gita-besant": "Know That to be indestructible by whom all this is pervaded. Nor can any work the destruction of that imperishable One."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.18",
+      "sectionID": "gita.ch2",
+      "sequence": 18,
+      "reference": "Bhagavad Gita 2.18",
+      "originalText": "अन्तवन्त इमे देहा नित्यस्योक्ताः शरीरिणः ।\nअनाशिनोऽप्रमेयस्य तस्माद्युध्यस्व भारत ॥ १८ ॥",
+      "texts": {
+        "gita-besant": "These bodies of the embodied One, who is eternal, indestructible and immeasurable, are known as finite. Therefore fight, O Bhârata."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.19",
+      "sectionID": "gita.ch2",
+      "sequence": 19,
+      "reference": "Bhagavad Gita 2.19",
+      "originalText": "य एनं वेत्ति हन्तारं यश्चैनं मन्यते हतम् ।\nउभौ तौ न विजानीतो नायं हन्ति न हन्यते ॥ १९ ॥",
+      "texts": {
+        "gita-besant": "He who regardeth this as a slayer, and he who thinketh he is slain, both of them are ignorant. He slayeth not, nor is he slain."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.20",
+      "sectionID": "gita.ch2",
+      "sequence": 20,
+      "reference": "Bhagavad Gita 2.20",
+      "originalText": "न जायते म्रियते वा कदाचिन्नायं भूत्वा भविता वा न भूयः ।\nअजो नित्यः शाश्वतोऽयं पुराणो न हन्यते हन्यमाने शरीरे ॥ २० ॥",
+      "texts": {
+        "gita-besant": "He is not born, nor doth he die; nor having been, ceaseth he any more to be; unborn, perpetual, eternal and ancient, he is not slain when the body is slaughtered."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.21",
+      "sectionID": "gita.ch2",
+      "sequence": 21,
+      "reference": "Bhagavad Gita 2.21",
+      "originalText": "वेदाऽविनाशिनं नित्यं य एनमजमव्ययम् ।\nकथं स पुरुषः पार्थ कं घातयति हन्ति कम् ॥ २१ ॥",
+      "texts": {
+        "gita-besant": "Who knoweth him indestructible, perpetual, unborn, undiminishing, how can that man slay, O Pârtha, or cause to be slain?"
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.22",
+      "sectionID": "gita.ch2",
+      "sequence": 22,
+      "reference": "Bhagavad Gita 2.22",
+      "originalText": "वासांसि जीर्णानि यथा विहाय नवानि गृह्णाति नरोऽपराणि ।\nतथा शरीराणि विहाय जीर्णान्यन्यानि संयाति नवानि देही ॥ २२ ॥",
+      "texts": {
+        "gita-besant": "As a man, casting off worn-out garments, taketh new ones, so the dweller in the body, casting off worn-out bodies, entereth into others that are new."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.23",
+      "sectionID": "gita.ch2",
+      "sequence": 23,
+      "reference": "Bhagavad Gita 2.23",
+      "originalText": "नैनं छिन्दन्ति शस्त्राणि नैनं दहति पावकः ।\nन चैनं क्लेदयन्त्यापो न शोषयति मारुतः ॥ २३ ॥",
+      "texts": {
+        "gita-besant": "Weapons cleave him not, nor fire burneth him, nor waters wet him, nor wind drieth him away."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.24",
+      "sectionID": "gita.ch2",
+      "sequence": 24,
+      "reference": "Bhagavad Gita 2.24",
+      "originalText": "अच्छेद्योऽयमदाह्योऽयमक्लेद्योऽशोष्य एव च ।\nनित्यः सर्वगतः स्थाणुरचलोऽयं सनातनः ॥ २४ ॥",
+      "texts": {
+        "gita-besant": "Uncleavable he, incombustible he, and indeed neither to be wetted nor dried away; perpetual, all-pervasive, stable, immovable, ancient."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.25",
+      "sectionID": "gita.ch2",
+      "sequence": 25,
+      "reference": "Bhagavad Gita 2.25",
+      "originalText": "अव्यक्तोऽयमचिन्त्योऽयमविकार्योऽयमुच्यते ।\nतस्मादेवं विदित्वैनं नानुशोचितुमर्हसि ॥ २५ ॥",
+      "texts": {
+        "gita-besant": "Unmanifest, unthinkable, immutable, he is called; therefore knowing him as such, thou shouldst not grieve."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.26",
+      "sectionID": "gita.ch2",
+      "sequence": 26,
+      "reference": "Bhagavad Gita 2.26",
+      "originalText": "अथ चैनं नित्यजातं नित्यं वा मन्यसे मृतम् ।\nतथापि त्वं महाबाहो नैनं शोचितुमर्हसि ॥ २६ ॥",
+      "texts": {
+        "gita-besant": "Or if thou thinkest of him as being constantly born and constantly dying, even then, O mighty-armed, thou shouldst not grieve."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.27",
+      "sectionID": "gita.ch2",
+      "sequence": 27,
+      "reference": "Bhagavad Gita 2.27",
+      "originalText": "जातस्य हि ध्रुवो मृत्युर्ध्रुवं जन्म मृतस्य च ।\nतस्मादपरिहार्येऽर्थे न त्वं शोचितुमर्हसि ॥ २७ ॥",
+      "texts": {
+        "gita-besant": "For certain is death for the born, and certain is birth for the dead; therefore over the inevitable thou shouldst not grieve."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.28",
+      "sectionID": "gita.ch2",
+      "sequence": 28,
+      "reference": "Bhagavad Gita 2.28",
+      "originalText": "अव्यक्तादीनि भूतानि व्यक्तमध्यानि भारत ।\nअव्यक्तनिधनान्येव तत्र का परिदेवना ॥ २८ ॥",
+      "texts": {
+        "gita-besant": "Beings are unmanifest in their origin, manifest in their midmost state, O Bhârata, unmanifest likewise are they in dissolution. What room then for lamentation?"
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.29",
+      "sectionID": "gita.ch2",
+      "sequence": 29,
+      "reference": "Bhagavad Gita 2.29",
+      "originalText": "आश्चर्यवत्पश्यति कश्चिदेनमाश्चर्यवद्वदति तथैव चान्यः ।\nआश्चर्यवच्चैनमन्यः शृणोति श्रुत्वाऽप्येनं वेद न चैव कश्चित् ॥ २९ ॥",
+      "texts": {
+        "gita-besant": "As marvellous one regardeth him; as marvellous another speaketh thereof; as marvellous another heareth thereof; yet having heard none indeed understandeth."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.30",
+      "sectionID": "gita.ch2",
+      "sequence": 30,
+      "reference": "Bhagavad Gita 2.30",
+      "originalText": "देही नित्यमवध्योऽयं देहे सर्वस्य भारत ।\nतस्मात्सर्वाणि भूतानि न त्वं शोचितुमर्हसि ॥ ३० ॥",
+      "texts": {
+        "gita-besant": "This dweller in the body of everyone is ever invulnerable, O Bhârata; therefore thou shouldst not grieve for any creature."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.31",
+      "sectionID": "gita.ch2",
+      "sequence": 31,
+      "reference": "Bhagavad Gita 2.31",
+      "originalText": "स्वधर्ममपि चावेक्ष्य न विकम्पितुमर्हसि ।\nधर्म्याद्धि युद्धाच्छ्रेयोऽन्यत्क्षत्रियस्य न विद्यते ॥ ३१ ॥",
+      "texts": {
+        "gita-besant": "Further, looking to thine own duty thou shouldst not tremble; for there is nothing more welcome to a Kshattriya than righteous war."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.32",
+      "sectionID": "gita.ch2",
+      "sequence": 32,
+      "reference": "Bhagavad Gita 2.32",
+      "originalText": "यदृच्छया चोपपन्नं स्वर्गद्वारमपावृतम् ।\nसुखिनः क्षत्रियाः पार्थ लभन्ते युद्धमीदृशम् ॥ ३२ ॥",
+      "texts": {
+        "gita-besant": "Happy the Kshattriyas, O Pârtha, who obtain such a fight, offered unsought as an open door to heaven."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.33",
+      "sectionID": "gita.ch2",
+      "sequence": 33,
+      "reference": "Bhagavad Gita 2.33",
+      "originalText": "अथ चेत्त्वमिमं धर्म्यं सङ्ग्रामं न करिष्यसि ।\nततः स्वधर्मं कीर्तिं च हित्वा पापमवाप्स्यसि ॥ ३३ ॥",
+      "texts": {
+        "gita-besant": "But if thou wilt not carry on this righteous warfare, then casting away thine own duty and thine honour, thou wilt incur sin."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.34",
+      "sectionID": "gita.ch2",
+      "sequence": 34,
+      "reference": "Bhagavad Gita 2.34",
+      "originalText": "अकीर्तिं चापि भूतानि कथयिष्यन्ति तेऽव्ययाम् ।\nसम्भावितस्य चाकीर्तिर्मरणादतिरिच्यते ॥ ३४ ॥",
+      "texts": {
+        "gita-besant": "Men will recount thy perpetual dishonour, and, to one highly esteemed, dishonour exceedeth death."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.35",
+      "sectionID": "gita.ch2",
+      "sequence": 35,
+      "reference": "Bhagavad Gita 2.35",
+      "originalText": "भयाद्रणादुपरतं मंस्यन्ते त्वां महारथाः ।\nयेषां च त्वं बहुमतो भूत्वा यास्यसि लाघवम् ॥ ३५ ॥",
+      "texts": {
+        "gita-besant": "The great car-warriors will think thee fled from the battle from fear, and thou, that wast highly thought of by them, wilt be lightly held."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.36",
+      "sectionID": "gita.ch2",
+      "sequence": 36,
+      "reference": "Bhagavad Gita 2.36",
+      "originalText": "अवाच्यवादांश्च बहून्वदिष्यन्ति तवाहिताः ।\nनिन्दन्तस्तव सामर्थ्यं ततो दुःखतरं नु किम् ॥ ३६ ॥",
+      "texts": {
+        "gita-besant": "Many unseemly words will be spoken by thine enemies, slandering thy strength; what more painful than that?"
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.37",
+      "sectionID": "gita.ch2",
+      "sequence": 37,
+      "reference": "Bhagavad Gita 2.37",
+      "originalText": "हतो वा प्राप्स्यसि स्वर्गं जित्वा वा भोक्ष्यसे महीम् ।\nतस्मादुत्तिष्ठ कौन्तेय युद्धाय कृतनिश्चयः ॥ ३७ ॥",
+      "texts": {
+        "gita-besant": "Slain, thou wilt obtain heaven; victorious, thou wilt enjoy the earth; therefore stand up, O son of Kuntî, resolute to fight."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.38",
+      "sectionID": "gita.ch2",
+      "sequence": 38,
+      "reference": "Bhagavad Gita 2.38",
+      "originalText": "सुखदुःखे समे कृत्वा लाभालाभौ जयाजयौ ।\nततो युद्धाय युज्यस्व नैवं पापमवाप्स्यसि ॥ ३८ ॥",
+      "texts": {
+        "gita-besant": "Taking as equal pleasure and pain, gain and loss, victory and defeat, gird thee for the battle; thus thou shalt not incur sin."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.39",
+      "sectionID": "gita.ch2",
+      "sequence": 39,
+      "reference": "Bhagavad Gita 2.39",
+      "originalText": "एषा तेऽभिहिता साङ्ख्ये बुद्धिर्योगे त्विमां शृणु ।\nबुद्ध्या युक्तो यया पार्थ कर्मबन्धं प्रहास्यसि ॥ ३९ ॥",
+      "texts": {
+        "gita-besant": "This teaching set forth to thee is in accordance with the Sâñkhya; hear it now according to the Yoga, imbued with which teaching, O Pârtha, thou shalt cast away the bonds of action."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.40",
+      "sectionID": "gita.ch2",
+      "sequence": 40,
+      "reference": "Bhagavad Gita 2.40",
+      "originalText": "नेहाभिक्रमनाशोऽस्ति प्रत्यवायो न विद्यते ।\nस्वल्पमप्यस्य धर्मस्य त्रायते महतो भयात् ॥ ४० ॥",
+      "texts": {
+        "gita-besant": "In this there is no loss of effort, nor is there transgression. Even a little of this knowledge protects from great fear."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.41",
+      "sectionID": "gita.ch2",
+      "sequence": 41,
+      "reference": "Bhagavad Gita 2.41",
+      "originalText": "व्ययसायात्मिका बुद्धिरेकेह कुरुनन्दन ।\nबहुशाखा ह्यनन्ताश्च बुद्धयोऽव्यवसायिनाम् ॥ ४१ ॥",
+      "texts": {
+        "gita-besant": "The determinate Reason is but one-pointed, O joy of the Kurus; many-branched and endless are the thoughts of the irresolute."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.42",
+      "sectionID": "gita.ch2",
+      "sequence": 42,
+      "reference": "Bhagavad Gita 2.42",
+      "originalText": "यामिमां पुष्पितां वाचं प्रवदन्त्यविपश्चितः ।\nवेदवादरताः पार्थ नान्यदस्तीति वादिनः ॥ ४२ ॥",
+      "texts": {
+        "gita-besant": "Flowery speech is uttered by the foolish, rejoicing in the letter of the Vedas, O Pârtha, saying: \"There is naught but this\";"
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.43",
+      "sectionID": "gita.ch2",
+      "sequence": 43,
+      "reference": "Bhagavad Gita 2.43",
+      "originalText": "कामात्मानः स्वर्गपरा जन्मकर्मफलप्रदाम् ।\nक्रियाविशेषबहुलां भोगैश्वर्यगतिं प्रति ॥ ४३ ॥",
+      "texts": {
+        "gita-besant": "With desire for self, with heaven for goal, they offer birth as the fruit of action, and prescribe many and various ceremonies for the attainment of pleasure and lordship."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.44",
+      "sectionID": "gita.ch2",
+      "sequence": 44,
+      "reference": "Bhagavad Gita 2.44",
+      "originalText": "भोगैश्वर्यप्रसक्तानां तयाऽपहृतचेतसाम् ।\nव्यवसायात्मिका बुद्धिः समाधौ न विधीयते ॥ ४४ ॥",
+      "texts": {
+        "gita-besant": "For them who cling to pleasure and lordship, whose minds are captivated by such teaching, is not designed this determinate Reason, on contemplation steadily bent."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.45",
+      "sectionID": "gita.ch2",
+      "sequence": 45,
+      "reference": "Bhagavad Gita 2.45",
+      "originalText": "त्रैगुण्यविषया वेदा निस्त्रैगुण्यो भवार्जुन ।\nनिर्द्वन्द्वो नित्यसत्त्वस्थो निर्योगक्षेम आत्मवान् ॥ ४५ ॥",
+      "texts": {
+        "gita-besant": "The Vedas deal with the three attributes; be thou above these three attributes, O Arjuna; beyond the pairs of opposites, ever steadfast in purity, careless of possessions, full of the Self."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.46",
+      "sectionID": "gita.ch2",
+      "sequence": 46,
+      "reference": "Bhagavad Gita 2.46",
+      "originalText": "यावानर्थ उदपाने सर्वतः सम्प्लुतोदके ।\nतावान्सर्वेषु वेदेषु ब्राह्मणस्य विजानतः ॥ ४६ ॥",
+      "texts": {
+        "gita-besant": "All the Vedas are as useful to an enlightened Brâhmana as is a tank in a place covered all over with water."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.47",
+      "sectionID": "gita.ch2",
+      "sequence": 47,
+      "reference": "Bhagavad Gita 2.47",
+      "originalText": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।\nमा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥ ४७ ॥",
+      "texts": {
+        "gita-besant": "Thy business is with the action only, never with its fruits; so let not the fruit of action be thy motive, nor be thou to inaction attached."
+      },
+      "themes": [
+        "action-consequence"
+      ]
+    },
+    {
+      "id": "gita.2.48",
+      "sectionID": "gita.ch2",
+      "sequence": 48,
+      "reference": "Bhagavad Gita 2.48",
+      "originalText": "योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय ।\nसिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते ॥ ४८ ॥",
+      "texts": {
+        "gita-besant": "Perform action, O Dhananjaya, dwelling in union with the divine, renouncing attachments and balanced evenly in success and failure: equilibrium is called yoga."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.49",
+      "sectionID": "gita.ch2",
+      "sequence": 49,
+      "reference": "Bhagavad Gita 2.49",
+      "originalText": "दूरेण ह्यवरं कर्म बुद्धियोगाद्धनञ्जय ।\nबुद्धौ शरणमन्विच्छ कृपणाः फलहेतवः ॥ ४९ ॥",
+      "texts": {
+        "gita-besant": "Far lower than the Yoga of Discrimination is action, O Dhananjaya. Take thou refuge in the Pure Reason; pitiable are they who work for fruit."
+      },
+      "themes": [
+        "action-consequence"
+      ]
+    },
+    {
+      "id": "gita.2.50",
+      "sectionID": "gita.ch2",
+      "sequence": 50,
+      "reference": "Bhagavad Gita 2.50",
+      "originalText": "बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते ।\nतस्माद्योगाय युज्यस्व योगः कर्मसु कौशलम् ॥ ५० ॥",
+      "texts": {
+        "gita-besant": "United to the Pure Reason one abandoneth here both good and evil deeds; therefore cleave thou to yoga; yoga is skill in action."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.51",
+      "sectionID": "gita.ch2",
+      "sequence": 51,
+      "reference": "Bhagavad Gita 2.51",
+      "originalText": "कर्मजं बुद्धियुक्ता हि फलं त्यक्त्वा मनीषिणः ।\nजन्मबन्धविनिर्मुक्ताः पदं गच्छन्त्यनामयम् ॥ ५१ ॥",
+      "texts": {
+        "gita-besant": "The Sages, united to the Pure Reason, renounce the fruit which action yieldeth, and, liberated from the bonds of birth, they go to the blissful seat."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.52",
+      "sectionID": "gita.ch2",
+      "sequence": 52,
+      "reference": "Bhagavad Gita 2.52",
+      "originalText": "यदा ते मोहकलिलं बुद्धिर्व्यतितरिष्यति ।\nतदा गन्तासि निर्वेदं श्रोतव्यस्य श्रुतस्य च ॥ ५२ ॥",
+      "texts": {
+        "gita-besant": "When thy mind shall escape from this tangle of delusion, then thou shalt rise to indifference as to what has been heard and shall be heard."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.53",
+      "sectionID": "gita.ch2",
+      "sequence": 53,
+      "reference": "Bhagavad Gita 2.53",
+      "originalText": "श्रुतिविप्रतिपन्ना ते यदा स्थास्यति निश्चला ।\nसमाधावचला बुद्धिस्तदा योगमवाप्स्यसि ॥ ५३ ॥",
+      "texts": {
+        "gita-besant": "When thy mind, bewildered by the Scriptures, shall stand immovable, fixed in contemplation, then shalt thou attain unto yoga."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.54",
+      "sectionID": "gita.ch2",
+      "sequence": 54,
+      "reference": "Bhagavad Gita 2.54",
+      "originalText": "अर्जुन उवाच ।\nस्थितप्रज्ञस्य का भाषा समाधिस्थस्य केशव ।\nस्थितधीः किं प्रभाषेत किमासीत व्रजेत किम् ॥ ५४ ॥",
+      "texts": {
+        "gita-besant": "Arjuna said: What the mark, of him who is stable of mind, steadfast in contemplation, O Keshava? How doth the stable-minded talk, how doth he sit, how walk?"
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.55",
+      "sectionID": "gita.ch2",
+      "sequence": 55,
+      "reference": "Bhagavad Gita 2.55",
+      "originalText": "प्रजहाति यदा कामान्सर्वान्पार्थ मनोगतान् ।\nआत्मन्येवात्मना तुष्टः स्थितप्रज्ञस्तदोच्यते ॥ ५५ ॥",
+      "texts": {
+        "gita-besant": "The Blessed Lord said: When a man abandoneth, O Pârtha, all the desires of the heart, and is satisfied in the Self by the Self, then is he called stable in mind."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.56",
+      "sectionID": "gita.ch2",
+      "sequence": 56,
+      "reference": "Bhagavad Gita 2.56",
+      "originalText": "दुःखेष्वनुद्विग्नमनाः सुखेषु विगतस्पृहः ।\nवीतरागभयक्रोधः स्थितधीर्मुनिरुच्यते ॥ ५६ ॥",
+      "texts": {
+        "gita-besant": "He whose mind is free from anxiety amid pains, indifferent amid pleasures, loosed from passion, fear and anger, is called a sage of stable mind."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.57",
+      "sectionID": "gita.ch2",
+      "sequence": 57,
+      "reference": "Bhagavad Gita 2.57",
+      "originalText": "यः सर्वत्रानभिस्नेहस्तत्तत्प्राप्य शुभाशुभम् ।\nनाभिनन्दति न द्वेष्टि तस्य प्रज्ञा प्रतिष्ठिता ॥ ५७ ॥",
+      "texts": {
+        "gita-besant": "He who on every side is without attachments, whatever hap of fair and foul, who neither likes nor dislikes, of such a one the understanding is well poised."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.58",
+      "sectionID": "gita.ch2",
+      "sequence": 58,
+      "reference": "Bhagavad Gita 2.58",
+      "originalText": "यदा संहरते चायं कूर्मोऽङ्गानीव सर्वशः ।\nइन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता ॥ ५८ ॥",
+      "texts": {
+        "gita-besant": "When, again, as a tortoise draws in on all sides its limbs, he withdraws his senses from the objects of sense, then is his understanding well poised."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.59",
+      "sectionID": "gita.ch2",
+      "sequence": 59,
+      "reference": "Bhagavad Gita 2.59",
+      "originalText": "विषया विनिवर्तन्ते निराहारस्य देहिनः ।\nरसवर्जं रसोऽप्यस्य परं दृष्ट्वा निवर्तते ॥ ५९ ॥",
+      "texts": {
+        "gita-besant": "The objects of sense, but not the relish for them, turn away from an abstemious dweller in the body; and even relish turneth away from him after the Supreme is seen."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.60",
+      "sectionID": "gita.ch2",
+      "sequence": 60,
+      "reference": "Bhagavad Gita 2.60",
+      "originalText": "यततो ह्यपि कौन्तेय पुरुषस्य विपश्चितः ।\nइन्द्रियाणि प्रमाथीनि हरन्ति प्रसभं मनः ॥ ६० ॥",
+      "texts": {
+        "gita-besant": "O son of Kuntî, the excited senses of even a wise man, though he be striving, impetuously carry away his mind."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.61",
+      "sectionID": "gita.ch2",
+      "sequence": 61,
+      "reference": "Bhagavad Gita 2.61",
+      "originalText": "तानि सर्वाणि संयम्य युक्त आसीत मत्परः ।\nवशे हि यस्येन्द्रियाणि तस्य प्रज्ञा प्रतिष्ठिता ॥ ६१ ॥",
+      "texts": {
+        "gita-besant": "Having restrained them all, he should sit harmonised, I his supreme goal; for, whose senses are mastered, of him the understanding is well poised."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.62",
+      "sectionID": "gita.ch2",
+      "sequence": 62,
+      "reference": "Bhagavad Gita 2.62",
+      "originalText": "ध्यायतो विषयान्पुंसः सङ्गस्तेषूपजायते ।\nसङ्गात्सञ्जायते कामः कामात्क्रोधोऽभिजायते ॥ ६२ ॥",
+      "texts": {
+        "gita-besant": "Man, musing on the objects of sense, conceiveth an attachment to these; from attachment ariseth desire; from desire anger cometh forth;"
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.63",
+      "sectionID": "gita.ch2",
+      "sequence": 63,
+      "reference": "Bhagavad Gita 2.63",
+      "originalText": "क्रोधाद्भवति सम्मोहः सम्मोहात्स्मृतिविभ्रमः ।\nस्मृतिभ्रंशाद्बुद्धिनाशो बुद्धिनाशात्प्रणश्यति ॥ ६३ ॥",
+      "texts": {
+        "gita-besant": "From anger proceedeth delusion; from delusion confused memory; from confused memory the destruction of Reason; from destruction of Reason he perishes."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.64",
+      "sectionID": "gita.ch2",
+      "sequence": 64,
+      "reference": "Bhagavad Gita 2.64",
+      "originalText": "रागद्वेषवियुक्तैस्तुं विषयानिन्द्रियैश्चरन् ।\nआत्मवश्यैर्विधेयात्मा प्रसादमधिगच्छति ॥ ६४ ॥",
+      "texts": {
+        "gita-besant": "But the disciplined self, moving among sense-objects with senses free from attraction and repulsion, mastered by the Self, goeth to peace."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.65",
+      "sectionID": "gita.ch2",
+      "sequence": 65,
+      "reference": "Bhagavad Gita 2.65",
+      "originalText": "प्रसादे सर्वदुःखानां हानिरस्योपजायते ।\nप्रसन्नचेतसो ह्याशु बुद्धिः पर्यवतिष्ठते ॥ ६५ ॥",
+      "texts": {
+        "gita-besant": "In that Peace the extinction of all pains ariseth for him, for of him whose heart is peaceful the Reason soon attaineth equilibrium."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.66",
+      "sectionID": "gita.ch2",
+      "sequence": 66,
+      "reference": "Bhagavad Gita 2.66",
+      "originalText": "नास्ति बुद्धिरयुक्तस्य न चायुक्तस्य भावना ।\nन चाभावयतः शान्तिरशान्तस्य कुतः सुखम् ॥ ६६ ॥",
+      "texts": {
+        "gita-besant": "There is no Pure Reason for the non-harmonised, nor for the non-harmonised is there concentration; for him without concentration there is no peace, and for the unpeaceful how can there be happiness?"
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.67",
+      "sectionID": "gita.ch2",
+      "sequence": 67,
+      "reference": "Bhagavad Gita 2.67",
+      "originalText": "इन्द्रियाणां हि चरतां यन्मनोऽनु विधीयते ।\nतदस्य हरति प्रज्ञां वायुर्नावमिवाम्भसि ॥ ६७ ॥",
+      "texts": {
+        "gita-besant": "Such of the roving senses as the mind yieldeth to, that hurries away the understanding, just as the gale hurries away a ship upon the waters."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.68",
+      "sectionID": "gita.ch2",
+      "sequence": 68,
+      "reference": "Bhagavad Gita 2.68",
+      "originalText": "तस्माद्यस्य महाबाहो निगृहीतानि सर्वशः ।\nइन्द्रियाणीन्द्रियार्थेभ्यस्तस्य प्रज्ञा प्रतिष्ठिता ॥ ६८ ॥",
+      "texts": {
+        "gita-besant": "Therefore, O mighty-armed, whose senses are all completely restrained from the objects of sense, of him the understanding is well poised."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.69",
+      "sectionID": "gita.ch2",
+      "sequence": 69,
+      "reference": "Bhagavad Gita 2.69",
+      "originalText": "या निशा सर्वभूतानां तस्यां जागर्ति संयमी ।\nयस्यां जाग्रति भूतानि सा निशा पश्यतो मुनेः ॥ ६९ ॥",
+      "texts": {
+        "gita-besant": "That which is the night of all beings, for the disciplined man is the time of waking; when other beings are waking, then is it night for the sage who seeth."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.70",
+      "sectionID": "gita.ch2",
+      "sequence": 70,
+      "reference": "Bhagavad Gita 2.70",
+      "originalText": "आपूर्यमाणमचलप्रतिष्ठं समुद्रमापः प्रविशन्ति यद्वत् ।\nतद्वत्कामा यं प्रविशन्ति सर्वे स शान्तिमाप्नोति न कामकामी ॥ ७० ॥",
+      "texts": {
+        "gita-besant": "He attaineth Peace, into whom all desires flow as rivers flow into the ocean, which is filled with water, but remaineth unmoved—not he who desireth desires."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.71",
+      "sectionID": "gita.ch2",
+      "sequence": 71,
+      "reference": "Bhagavad Gita 2.71",
+      "originalText": "विहाय कामान्यः सर्वान्पुमांश्चरति निःस्पृहः ।\nनिर्ममो निरहङ्कारः स शान्तिमधिगच्छति ॥ ७१ ॥",
+      "texts": {
+        "gita-besant": "Whoso forsaketh all desires and goeth onwards free from yearnings, selfless and without egoism—he goeth to Peace."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.72",
+      "sectionID": "gita.ch2",
+      "sequence": 72,
+      "reference": "Bhagavad Gita 2.72",
+      "originalText": "एषा ब्राह्मी स्थितिः पार्थ नैनां प्राप्य विमुह्यति ।\nस्थित्वाऽस्यामन्तकालेऽपि ब्रह्म निर्वाणमृच्छति ॥ ७२ ॥",
+      "texts": {
+        "gita-besant": "This is the Eternal state, O son of Prithâ. Having attained thereto, none is bewildered. Who, even at the death-hour, is established therein, he goeth to the Nirvâna of the Eternal."
+      },
+      "themes": []
+    }
+  ]
+}

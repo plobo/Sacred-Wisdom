@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 3,
+  "religions": [
+    {
+      "id": "buddhism",
+      "name": "Buddhism",
+      "summary": "Path of awakening taught by the Buddha.",
+      "emblem": "☸",
+      "tintKey": "amber",
+      "sortOrder": 4
+    }
+  ],
+  "sources": [
+    {
+      "id": "suttacentral",
+      "name": "SuttaCentral (bilara-data): Mahāsaṅgīti Pali root text and Sujato translation",
+      "url": "https://suttacentral.net/dhp1-20/en/sujato",
+      "license": "Translation: CC0 1.0. Pali root text: ancient canon (digital edition license to be confirmed)",
+      "attribution": "Translated by Bhikkhu Sujato. Pali from the Mahāsaṅgīti edition."
+    },
+    {
+      "id": "muller-1881",
+      "name": "The Dhammapada, tr. F. Max Müller (1881), via Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/2017",
+      "license": "Public domain",
+      "attribution": "Translated by F. Max Müller (1823–1900)."
+    }
+  ],
+  "collections": [
+    {
+      "id": "tripitaka",
+      "religionID": "buddhism",
+      "name": "Tripitaka and Sutras",
+      "structureDescription": "Collections, texts and passages",
+      "languages": [
+        "pi",
+        "en"
+      ],
+      "availability": "downloaded",
+      "originalLanguage": "pi",
+      "originalSourceID": "suttacentral",
+      "defaultTranslationID": "dhp-sujato"
+    }
+  ],
+  "translations": [
+    {
+      "id": "dhp-sujato",
+      "collectionID": "tripitaka",
+      "name": "Bhikkhu Sujato",
+      "languageCode": "en",
+      "translator": "Bhikkhu Sujato",
+      "year": 2021,
+      "sourceID": "suttacentral"
+    },
+    {
+      "id": "dhp-muller",
+      "collectionID": "tripitaka",
+      "name": "F. Max Müller (1881)",
+      "languageCode": "en",
+      "translator": "F. Max Müller",
+      "year": 1881,
+      "sourceID": "muller-1881"
+    }
+  ],
+  "books": [
+    {
+      "id": "dhammapada",
+      "collectionID": "tripitaka",
+      "title": "Dhammapada",
+      "division": "Khuddaka Nikāya, Sutta Piṭaka",
+      "sequence": 1
+    }
+  ],
+  "sections": [
+    {
+      "id": "dhammapada.ch1",
+      "bookID": "dhammapada",
+      "title": "Chapter 1 · Yamakavagga (Pairs)",
+      "sequence": 1
+    }
+  ],
+  "themes": [
+    {
+      "id": "purity",
+      "name": "Purity of Heart and Mind"
+    },
+    {
+      "id": "peace",
+      "name": "Peace and the End of Hatred"
+    },
+    {
+      "id": "action-consequence",
+      "name": "Action and Its Fruits"
+    }
+  ],
+  "passages": [
+    {
+      "id": "dhammapada.1",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 1,
+      "reference": "Dhammapada 1",
+      "originalText": "Manopubbaṅgamā dhammā,\nmanoseṭṭhā manomayā;\nManasā ce paduṭṭhena,\nbhāsati vā karoti vā;\nTato naṁ dukkhamanveti,\ncakkaṁva vahato padaṁ.",
+      "texts": {
+        "dhp-sujato": "Intention is the leader of things;\nintention is first, they’re made by intention.\nIf with corrupt intent\nyou speak or act,\nsuffering follows you,\nlike a wheel, the ox’s foot.",
+        "dhp-muller": "All that we are is the result of what we have thought: it is founded on our thoughts, it is made up of our thoughts. If a man speaks or acts with an evil thought, pain follows him, as the wheel follows the foot of the ox that draws the carriage."
+      },
+      "themes": [
+        "action-consequence"
+      ]
+    },
+    {
+      "id": "dhammapada.2",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 2,
+      "reference": "Dhammapada 2",
+      "originalText": "Manopubbaṅgamā dhammā,\nmanoseṭṭhā manomayā;\nManasā ce pasannena,\nbhāsati vā karoti vā;\nTato naṁ sukhamanveti,\nchāyāva anapāyinī.",
+      "texts": {
+        "dhp-sujato": "Intention is the leader of things;\nintention is first, they’re made by intention.\nIf with pure intent\nyou speak or act,\nhappiness follows you\nlike a shadow that never leaves.",
+        "dhp-muller": "All that we are is the result of what we have thought: it is founded on our thoughts, it is made up of our thoughts. If a man speaks or acts with a pure thought, happiness follows him, like a shadow that never leaves him."
+      },
+      "themes": [
+        "purity",
+        "action-consequence"
+      ]
+    },
+    {
+      "id": "dhammapada.3",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 3,
+      "reference": "Dhammapada 3",
+      "originalText": "Akkocchi maṁ avadhi maṁ,\najini maṁ ahāsi me;\nYe ca taṁ upanayhanti,\nveraṁ tesaṁ na sammati.",
+      "texts": {
+        "dhp-sujato": "“They abused me, they hit me!\nThey beat me, they robbed me!”\nFor those who bear such a grudge,\nHATRED is never laid to rest.",
+        "dhp-muller": "\"He abused me, he beat me, he defeated me, he robbed me,\"—in those who harbour such thoughts hatred will never cease."
+      },
+      "themes": [
+        "peace"
+      ]
+    },
+    {
+      "id": "dhammapada.4",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 4,
+      "reference": "Dhammapada 4",
+      "originalText": "Akkocchi maṁ avadhi maṁ,\najini maṁ ahāsi me;\nYe ca taṁ nupanayhanti,\nveraṁ tesūpasammati.",
+      "texts": {
+        "dhp-sujato": "“They abused me, they hit me!\nThey beat me, they robbed me!”\nFor those who bear no such grudge,\nhatred is laid to rest.",
+        "dhp-muller": "\"He abused me, he beat me, he defeated me, he robbed me,\"—in those who do not harbour such thoughts hatred will cease."
+      },
+      "themes": [
+        "peace"
+      ]
+    },
+    {
+      "id": "dhammapada.5",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 5,
+      "reference": "Dhammapada 5",
+      "originalText": "Na hi verena verāni,\nsammantīdha kudācanaṁ;\nAverena ca sammanti,\nesa dhammo sanantano.",
+      "texts": {
+        "dhp-sujato": "For never is hatred\nlaid to rest by hate,\nit’s laid to rest by love:\nthis is an ancient teaching.",
+        "dhp-muller": "For hatred does not cease by hatred at any time: hatred ceases by love, this is an old rule."
+      },
+      "themes": [
+        "peace"
+      ]
+    },
+    {
+      "id": "dhammapada.6",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 6,
+      "reference": "Dhammapada 6",
+      "originalText": "Pare ca na vijānanti,\nmayamettha yamāmase;\nYe ca tattha vijānanti,\ntato sammanti medhagā.",
+      "texts": {
+        "dhp-sujato": "When others do not understand,\nlet us, who do understand this,\nrestrain ourselves in this regard;\nfor that is how conflicts are laid to rest.",
+        "dhp-muller": "The world does not know that we must all come to an end here;—but those who know it, their quarrels cease at once."
+      },
+      "themes": [
+        "peace"
+      ]
+    },
+    {
+      "id": "dhammapada.7",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 7,
+      "reference": "Dhammapada 7",
+      "originalText": "Subhānupassiṁ viharantaṁ,\nindriyesu asaṁvutaṁ;\nBhojanamhi cāmattaññuṁ,\nkusītaṁ hīnavīriyaṁ;\nTaṁ ve pasahati māro,\nvāto rukkhaṁva dubbalaṁ.",
+      "texts": {
+        "dhp-sujato": "Those who contemplate the beautiful,\ntheir faculties unrestrained,\nimmoderate in eating,\nlazy, lacking energy:\nMāra strikes them down\nlike the wind, a feeble tree.",
+        "dhp-muller": "He who lives looking for pleasures only, his senses uncontrolled, immoderate in his food, idle, and weak, Mara (the tempter) will certainly overthrow him, as the wind throws down a weak tree."
+      },
+      "themes": []
+    },
+    {
+      "id": "dhammapada.8",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 8,
+      "reference": "Dhammapada 8",
+      "originalText": "Asubhānupassiṁ viharantaṁ,\nIndriyesu susaṁvutaṁ;\nBhojanamhi ca mattaññuṁ,\nSaddhaṁ āraddhavīriyaṁ;\nTaṁ ve nappasahati māro,\nVāto selaṁva pabbataṁ.",
+      "texts": {
+        "dhp-sujato": "Those who contemplate the ugly,\ntheir faculties well-restrained,\neating in moderation,\nfaithful and energetic:\nMāra cannot strike them down,\nlike the wind, a rocky mountain.",
+        "dhp-muller": "He who lives without looking for pleasures, his senses well controlled, moderate in his food, faithful and strong, him Mara will certainly not overthrow, any more than the wind throws down a rocky mountain."
+      },
+      "themes": []
+    },
+    {
+      "id": "dhammapada.9",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 9,
+      "reference": "Dhammapada 9",
+      "originalText": "Anikkasāvo kāsāvaṁ,\nyo vatthaṁ paridahissati;\nApeto damasaccena,\nna so kāsāvamarahati.",
+      "texts": {
+        "dhp-sujato": "One who, not free of stains themselves,\nwould wear the robe stained in ocher,\nbereft of self-control and truth:\nthey are not worthy of the ocher robe.",
+        "dhp-muller": "He who wishes to put on the yellow dress without having cleansed himself from sin, who disregards temperance and truth, is unworthy of the yellow dress."
+      },
+      "themes": []
+    },
+    {
+      "id": "dhammapada.10",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 10,
+      "reference": "Dhammapada 10",
+      "originalText": "Yo ca vantakasāvassa,\nsīlesu susamāhito;\nUpeto damasaccena,\nsa ve kāsāvamarahati.",
+      "texts": {
+        "dhp-sujato": "One who’s purged all their stains,\nsteady in ethics,\npossessed of self-control and of truth,\nthey are truly worthy of the ocher robe.",
+        "dhp-muller": "But he who has cleansed himself from sin, is well grounded in all virtues, and regards also temperance and truth, he is indeed worthy of the yellow dress."
+      },
+      "themes": []
+    },
+    {
+      "id": "dhammapada.11",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 11,
+      "reference": "Dhammapada 11",
+      "originalText": "Asāre sāramatino,\nsāre cāsāradassino;\nTe sāraṁ nādhigacchanti,\nmicchāsaṅkappagocarā.",
+      "texts": {
+        "dhp-sujato": "Thinking the inessential is essential,\nseeing the essential as inessential;\nthey don’t realize the essential,\nfor wrong thoughts are their habitat.",
+        "dhp-muller": "They who imagine truth in untruth, and see untruth in truth, never arrive at truth, but follow vain desires."
+      },
+      "themes": []
+    },
+    {
+      "id": "dhammapada.12",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 12,
+      "reference": "Dhammapada 12",
+      "originalText": "Sārañca sārato ñatvā,\nasārañca asārato;\nTe sāraṁ adhigacchanti,\nsammāsaṅkappagocarā.",
+      "texts": {
+        "dhp-sujato": "Having known the essential as essential,\nand the inessential as inessential;\nthey realize the essential,\nfor right thoughts are their habitat.",
+        "dhp-muller": "They who know truth in truth, and untruth in untruth, arrive at truth, and follow true desires."
+      },
+      "themes": []
+    },
+    {
+      "id": "dhammapada.13",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 13,
+      "reference": "Dhammapada 13",
+      "originalText": "Yathā agāraṁ ducchannaṁ,\nvuṭṭhī samativijjhati;\nEvaṁ abhāvitaṁ cittaṁ,\nrāgo samativijjhati.",
+      "texts": {
+        "dhp-sujato": "Just as rain seeps into\na poorly roofed house,\nlust seeps into\nan undeveloped mind.",
+        "dhp-muller": "As rain breaks through an ill-thatched house, passion will break through an unreflecting mind."
+      },
+      "themes": []
+    },
+    {
+      "id": "dhammapada.14",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 14,
+      "reference": "Dhammapada 14",
+      "originalText": "Yathā agāraṁ suchannaṁ,\nvuṭṭhī na samativijjhati;\nEvaṁ subhāvitaṁ cittaṁ,\nrāgo na samativijjhati.",
+      "texts": {
+        "dhp-sujato": "Just as rain doesn’t seep into\na well roofed house,\nlust doesn’t seep into\na well developed mind.",
+        "dhp-muller": "As rain does not break through a well-thatched house, passion will not break through a well-reflecting mind."
+      },
+      "themes": []
+    },
+    {
+      "id": "dhammapada.15",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 15,
+      "reference": "Dhammapada 15",
+      "originalText": "Idha socati pecca socati,\nPāpakārī ubhayattha socati;\nSo socati so vihaññati,\nDisvā kammakiliṭṭhamattano.",
+      "texts": {
+        "dhp-sujato": "Here they grieve, hereafter they grieve,\nan evildoer grieves in both places.\nThey grieve and fret,\nseeing their own corrupt deeds.",
+        "dhp-muller": "The evil-doer mourns in this world, and he mourns in the next; he mourns in both. He mourns and suffers when he sees the evil of his own work."
+      },
+      "themes": []
+    },
+    {
+      "id": "dhammapada.16",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 16,
+      "reference": "Dhammapada 16",
+      "originalText": "Idha modati pecca modati,\nKatapuñño ubhayattha modati;\nSo modati so pamodati,\nDisvā kammavisuddhimattano.",
+      "texts": {
+        "dhp-sujato": "Here they rejoice, hereafter they rejoice,\none who does good rejoices in both places.\nThey rejoice and celebrate,\nseeing their own pure deeds.",
+        "dhp-muller": "The virtuous man delights in this world, and he delights in the next; he delights in both. He delights and rejoices, when he sees the purity of his own work."
+      },
+      "themes": []
+    },
+    {
+      "id": "dhammapada.17",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 17,
+      "reference": "Dhammapada 17",
+      "originalText": "Idha tappati pecca tappati,\nPāpakārī ubhayattha tappati;\n“Pāpaṁ me katan”ti tappati,\nBhiyyo tappati duggatiṁ gato.",
+      "texts": {
+        "dhp-sujato": "Here they’re tormented, <j>hereafter they’re tormented,\nan evildoer is tormented in both places.\nThey’re tormented <j>thinking of bad things they’ve done;\nwhen gone to a bad place, <j>they’re tormented all the more.",
+        "dhp-muller": "The evil-doer suffers in this world, and he suffers in the next; he suffers in both. He suffers when he thinks of the evil he has done; he suffers more when going on the evil path."
+      },
+      "themes": []
+    },
+    {
+      "id": "dhammapada.18",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 18,
+      "reference": "Dhammapada 18",
+      "originalText": "Idha nandati pecca nandati,\nKatapuñño ubhayattha nandati;\n“Puññaṁ me katan”ti nandati,\nBhiyyo nandati suggatiṁ gato.",
+      "texts": {
+        "dhp-sujato": "Here they delight, hereafter they delight,\none who does good delights in both places.\nThey delight thinking of good things they’ve done;\nwhen gone to a good place, they delight all the more.",
+        "dhp-muller": "The virtuous man is happy in this world, and he is happy in the next; he is happy in both. He is happy when he thinks of the good he has done; he is still more happy when going on the good path."
+      },
+      "themes": []
+    },
+    {
+      "id": "dhammapada.19",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 19,
+      "reference": "Dhammapada 19",
+      "originalText": "Bahumpi ce saṁhita bhāsamāno,\nNa takkaro hoti naro pamatto;\nGopova gāvo gaṇayaṁ paresaṁ,\nNa bhāgavā sāmaññassa hoti.",
+      "texts": {
+        "dhp-sujato": "Much though they may recite scripture,\nif a negligent person does not apply them,\nthen, like a cowherd who counts the cattle of others,\nthey miss out on the blessings of the ascetic life.",
+        "dhp-muller": "The thoughtless man, even if he can recite a large portion (of the law), but is not a doer of it, has no share in the priesthood, but is like a cowherd counting the cows of others."
+      },
+      "themes": []
+    },
+    {
+      "id": "dhammapada.20",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 20,
+      "reference": "Dhammapada 20",
+      "originalText": "Appampi ce saṁhita bhāsamāno,\nDhammassa hoti anudhammacārī;\nRāgañca dosañca pahāya mohaṁ,\nSammappajāno suvimuttacitto;\nAnupādiyāno idha vā huraṁ vā,\nSa bhāgavā sāmaññassa hoti.\nYamakavaggo paṭhamo.",
+      "texts": {
+        "dhp-sujato": "Little though they may recite scripture,\nif they live in line with the teaching,\nhaving given up greed, hate, and delusion,\nwith deep understanding and heart well freed,\nnot grasping to this life or the next,\nthey share in the blessings of the ascetic life.\n",
+        "dhp-muller": "The follower of the law, even if he can recite only a small portion (of the law), but, having forsaken passion and hatred and foolishness, possesses true knowledge and serenity of mind, he, caring for nothing in this world or that to come, has indeed a share in the priesthood."
+      },
+      "themes": []
+    }
+  ]
+}

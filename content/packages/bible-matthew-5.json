@@ -1,0 +1,651 @@
+{
+  "schemaVersion": 3,
+  "religions": [
+    {
+      "id": "christianity",
+      "name": "Christianity",
+      "summary": "Faith centered on the life and teachings of Jesus.",
+      "emblem": "✝",
+      "tintKey": "sapphire",
+      "sortOrder": 1
+    }
+  ],
+  "sources": [
+    {
+      "id": "kjv",
+      "name": "King James Version (1769 Oxford standard text), via getbible.net",
+      "url": "https://getbible.net",
+      "license": "Public domain (Crown rights apply in the United Kingdom)",
+      "attribution": "King James Version, 1769 Oxford standard text."
+    },
+    {
+      "id": "web",
+      "name": "World English Bible, via bible-api.com",
+      "url": "https://worldenglish.bible",
+      "license": "Public domain",
+      "attribution": "World English Bible."
+    }
+  ],
+  "collections": [
+    {
+      "id": "bible",
+      "religionID": "christianity",
+      "name": "Bible",
+      "structureDescription": "Old and New Testament, books, chapters and verses",
+      "languages": [
+        "en"
+      ],
+      "availability": "downloaded",
+      "originalLanguage": "en",
+      "originalSourceID": null,
+      "defaultTranslationID": "bible-kjv"
+    }
+  ],
+  "translations": [
+    {
+      "id": "bible-kjv",
+      "collectionID": "bible",
+      "name": "King James Version",
+      "languageCode": "en",
+      "translator": "King James translators",
+      "year": 1769,
+      "sourceID": "kjv"
+    },
+    {
+      "id": "bible-web",
+      "collectionID": "bible",
+      "name": "World English Bible",
+      "languageCode": "en",
+      "translator": "World English Bible translators",
+      "year": 2000,
+      "sourceID": "web"
+    }
+  ],
+  "books": [
+    {
+      "id": "bible.matthew",
+      "collectionID": "bible",
+      "title": "Matthew",
+      "division": "New Testament",
+      "sequence": 40
+    }
+  ],
+  "sections": [
+    {
+      "id": "bible.matthew.5",
+      "bookID": "bible.matthew",
+      "title": "Chapter 5",
+      "sequence": 5
+    }
+  ],
+  "themes": [
+    {
+      "id": "mercy",
+      "name": "Mercy"
+    },
+    {
+      "id": "purity",
+      "name": "Purity of Heart and Mind"
+    },
+    {
+      "id": "spiritual-hunger",
+      "name": "Hunger for the Divine"
+    },
+    {
+      "id": "peace",
+      "name": "Peace and the End of Hatred"
+    },
+    {
+      "id": "comfort",
+      "name": "Comfort in Sorrow"
+    }
+  ],
+  "passages": [
+    {
+      "id": "bible.matthew.5.1",
+      "sectionID": "bible.matthew.5",
+      "sequence": 1,
+      "reference": "Matthew 5:1",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "And seeing the multitudes, he went up into a mountain: and when he was set, his disciples came unto him:"
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.2",
+      "sectionID": "bible.matthew.5",
+      "sequence": 2,
+      "reference": "Matthew 5:2",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "And he opened his mouth, and taught them, saying,"
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.3",
+      "sectionID": "bible.matthew.5",
+      "sequence": 3,
+      "reference": "Matthew 5:3",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Blessed are the poor in spirit: for theirs is the kingdom of heaven.",
+        "bible-web": "“Blessed are the poor in spirit, for theirs is the Kingdom of Heaven."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.4",
+      "sectionID": "bible.matthew.5",
+      "sequence": 4,
+      "reference": "Matthew 5:4",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Blessed are they that mourn: for they shall be comforted.",
+        "bible-web": "Blessed are those who mourn, for they shall be comforted."
+      },
+      "themes": [
+        "comfort"
+      ]
+    },
+    {
+      "id": "bible.matthew.5.5",
+      "sectionID": "bible.matthew.5",
+      "sequence": 5,
+      "reference": "Matthew 5:5",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Blessed are the meek: for they shall inherit the earth.",
+        "bible-web": "Blessed are the gentle, for they shall inherit the earth."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.6",
+      "sectionID": "bible.matthew.5",
+      "sequence": 6,
+      "reference": "Matthew 5:6",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Blessed are they which do hunger and thirst after righteousness: for they shall be filled.",
+        "bible-web": "Blessed are those who hunger and thirst after righteousness, for they shall be filled."
+      },
+      "themes": [
+        "spiritual-hunger"
+      ]
+    },
+    {
+      "id": "bible.matthew.5.7",
+      "sectionID": "bible.matthew.5",
+      "sequence": 7,
+      "reference": "Matthew 5:7",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Blessed are the merciful: for they shall obtain mercy.",
+        "bible-web": "Blessed are the merciful, for they shall obtain mercy."
+      },
+      "themes": [
+        "mercy"
+      ]
+    },
+    {
+      "id": "bible.matthew.5.8",
+      "sectionID": "bible.matthew.5",
+      "sequence": 8,
+      "reference": "Matthew 5:8",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Blessed are the pure in heart: for they shall see God.",
+        "bible-web": "Blessed are the pure in heart, for they shall see God."
+      },
+      "themes": [
+        "purity"
+      ]
+    },
+    {
+      "id": "bible.matthew.5.9",
+      "sectionID": "bible.matthew.5",
+      "sequence": 9,
+      "reference": "Matthew 5:9",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Blessed are the peacemakers: for they shall be called the children of God.",
+        "bible-web": "Blessed are the peacemakers, for they shall be called children of God."
+      },
+      "themes": [
+        "peace"
+      ]
+    },
+    {
+      "id": "bible.matthew.5.10",
+      "sectionID": "bible.matthew.5",
+      "sequence": 10,
+      "reference": "Matthew 5:10",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Blessed are they which are persecuted for righteousness’ sake: for theirs is the kingdom of heaven.",
+        "bible-web": "Blessed are those who have been persecuted for righteousness’ sake, for theirs is the Kingdom of Heaven."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.11",
+      "sectionID": "bible.matthew.5",
+      "sequence": 11,
+      "reference": "Matthew 5:11",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Blessed are ye, when men shall revile you, and persecute you, and shall say all manner of evil against you falsely, for my sake."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.12",
+      "sectionID": "bible.matthew.5",
+      "sequence": 12,
+      "reference": "Matthew 5:12",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Rejoice, and be exceeding glad: for great is your reward in heaven: for so persecuted they the prophets which were before you."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.13",
+      "sectionID": "bible.matthew.5",
+      "sequence": 13,
+      "reference": "Matthew 5:13",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Ye are the salt of the earth: but if the salt have lost his savour, wherewith shall it be salted? it is thenceforth good for nothing, but to be cast out, and to be trodden under foot of men."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.14",
+      "sectionID": "bible.matthew.5",
+      "sequence": 14,
+      "reference": "Matthew 5:14",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Ye are the light of the world. A city that is set on an hill cannot be hid."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.15",
+      "sectionID": "bible.matthew.5",
+      "sequence": 15,
+      "reference": "Matthew 5:15",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Neither do men light a candle, and put it under a bushel, but on a candlestick; and it giveth light unto all that are in the house."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.16",
+      "sectionID": "bible.matthew.5",
+      "sequence": 16,
+      "reference": "Matthew 5:16",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.17",
+      "sectionID": "bible.matthew.5",
+      "sequence": 17,
+      "reference": "Matthew 5:17",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Think not that I am come to destroy the law, or the prophets: I am not come to destroy, but to fulfil."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.18",
+      "sectionID": "bible.matthew.5",
+      "sequence": 18,
+      "reference": "Matthew 5:18",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "For verily I say unto you, Till heaven and earth pass, one jot or one tittle shall in no wise pass from the law, till all be fulfilled."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.19",
+      "sectionID": "bible.matthew.5",
+      "sequence": 19,
+      "reference": "Matthew 5:19",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Whosoever therefore shall break one of these least commandments, and shall teach men so, he shall be called the least in the kingdom of heaven: but whosoever shall do and teach them, the same shall be called great in the kingdom of heaven."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.20",
+      "sectionID": "bible.matthew.5",
+      "sequence": 20,
+      "reference": "Matthew 5:20",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "For I say unto you, That except your righteousness shall exceed the righteousness of the scribes and Pharisees, ye shall in no case enter into the kingdom of heaven."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.21",
+      "sectionID": "bible.matthew.5",
+      "sequence": 21,
+      "reference": "Matthew 5:21",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Ye have heard that it was said by them of old time, Thou shalt not kill; and whosoever shall kill shall be in danger of the judgment:"
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.22",
+      "sectionID": "bible.matthew.5",
+      "sequence": 22,
+      "reference": "Matthew 5:22",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "But I say unto you, That whosoever is angry with his brother without a cause shall be in danger of the judgment: and whosoever shall say to his brother, Raca, shall be in danger of the council: but whosoever shall say, Thou fool, shall be in danger of hell fire."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.23",
+      "sectionID": "bible.matthew.5",
+      "sequence": 23,
+      "reference": "Matthew 5:23",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Therefore if thou bring thy gift to the altar, and there rememberest that thy brother hath ought against thee;"
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.24",
+      "sectionID": "bible.matthew.5",
+      "sequence": 24,
+      "reference": "Matthew 5:24",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Leave there thy gift before the altar, and go thy way; first be reconciled to thy brother, and then come and offer thy gift."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.25",
+      "sectionID": "bible.matthew.5",
+      "sequence": 25,
+      "reference": "Matthew 5:25",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Agree with thine adversary quickly, whiles thou art in the way with him; lest at any time the adversary deliver thee to the judge, and the judge deliver thee to the officer, and thou be cast into prison."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.26",
+      "sectionID": "bible.matthew.5",
+      "sequence": 26,
+      "reference": "Matthew 5:26",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Verily I say unto thee, Thou shalt by no means come out thence, till thou hast paid the uttermost farthing."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.27",
+      "sectionID": "bible.matthew.5",
+      "sequence": 27,
+      "reference": "Matthew 5:27",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Ye have heard that it was said by them of old time, Thou shalt not commit adultery:"
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.28",
+      "sectionID": "bible.matthew.5",
+      "sequence": 28,
+      "reference": "Matthew 5:28",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "But I say unto you, That whosoever looketh on a woman to lust after her hath committed adultery with her already in his heart."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.29",
+      "sectionID": "bible.matthew.5",
+      "sequence": 29,
+      "reference": "Matthew 5:29",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "And if thy right eye offend thee, pluck it out, and cast it from thee: for it is profitable for thee that one of thy members should perish, and not that thy whole body should be cast into hell."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.30",
+      "sectionID": "bible.matthew.5",
+      "sequence": 30,
+      "reference": "Matthew 5:30",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "And if thy right hand offend thee, cut it off, and cast it from thee: for it is profitable for thee that one of thy members should perish, and not that thy whole body should be cast into hell."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.31",
+      "sectionID": "bible.matthew.5",
+      "sequence": 31,
+      "reference": "Matthew 5:31",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "It hath been said, Whosoever shall put away his wife, let him give her a writing of divorcement:"
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.32",
+      "sectionID": "bible.matthew.5",
+      "sequence": 32,
+      "reference": "Matthew 5:32",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "But I say unto you, That whosoever shall put away his wife, saving for the cause of fornication, causeth her to commit adultery: and whosoever shall marry her that is divorced committeth adultery."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.33",
+      "sectionID": "bible.matthew.5",
+      "sequence": 33,
+      "reference": "Matthew 5:33",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Again, ye have heard that it hath been said by them of old time, Thou shalt not forswear thyself, but shalt perform unto the Lord thine oaths:"
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.34",
+      "sectionID": "bible.matthew.5",
+      "sequence": 34,
+      "reference": "Matthew 5:34",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "But I say unto you, Swear not at all; neither by heaven; for it is God’s throne:"
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.35",
+      "sectionID": "bible.matthew.5",
+      "sequence": 35,
+      "reference": "Matthew 5:35",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Nor by the earth; for it is his footstool: neither by Jerusalem; for it is the city of the great King."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.36",
+      "sectionID": "bible.matthew.5",
+      "sequence": 36,
+      "reference": "Matthew 5:36",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Neither shalt thou swear by thy head, because thou canst not make one hair white or black."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.37",
+      "sectionID": "bible.matthew.5",
+      "sequence": 37,
+      "reference": "Matthew 5:37",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "But let your communication be, Yea, yea; Nay, nay: for whatsoever is more than these cometh of evil."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.38",
+      "sectionID": "bible.matthew.5",
+      "sequence": 38,
+      "reference": "Matthew 5:38",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Ye have heard that it hath been said, An eye for an eye, and a tooth for a tooth:"
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.39",
+      "sectionID": "bible.matthew.5",
+      "sequence": 39,
+      "reference": "Matthew 5:39",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "But I say unto you, That ye resist not evil: but whosoever shall smite thee on thy right cheek, turn to him the other also."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.40",
+      "sectionID": "bible.matthew.5",
+      "sequence": 40,
+      "reference": "Matthew 5:40",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "And if any man will sue thee at the law, and take away thy coat, let him have thy cloke also."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.41",
+      "sectionID": "bible.matthew.5",
+      "sequence": 41,
+      "reference": "Matthew 5:41",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "And whosoever shall compel thee to go a mile, go with him twain."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.42",
+      "sectionID": "bible.matthew.5",
+      "sequence": 42,
+      "reference": "Matthew 5:42",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Give to him that asketh thee, and from him that would borrow of thee turn not thou away."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.43",
+      "sectionID": "bible.matthew.5",
+      "sequence": 43,
+      "reference": "Matthew 5:43",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Ye have heard that it hath been said, Thou shalt love thy neighbour, and hate thine enemy."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.44",
+      "sectionID": "bible.matthew.5",
+      "sequence": 44,
+      "reference": "Matthew 5:44",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "But I say unto you, Love your enemies, bless them that curse you, do good to them that hate you, and pray for them which despitefully use you, and persecute you;"
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.45",
+      "sectionID": "bible.matthew.5",
+      "sequence": 45,
+      "reference": "Matthew 5:45",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "That ye may be the children of your Father which is in heaven: for he maketh his sun to rise on the evil and on the good, and sendeth rain on the just and on the unjust."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.46",
+      "sectionID": "bible.matthew.5",
+      "sequence": 46,
+      "reference": "Matthew 5:46",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "For if ye love them which love you, what reward have ye? do not even the publicans the same?"
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.47",
+      "sectionID": "bible.matthew.5",
+      "sequence": 47,
+      "reference": "Matthew 5:47",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "And if ye salute your brethren only, what do ye more than others? do not even the publicans so?"
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.48",
+      "sectionID": "bible.matthew.5",
+      "sequence": 48,
+      "reference": "Matthew 5:48",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Be ye therefore perfect, even as your Father which is in heaven is perfect."
+      },
+      "themes": []
+    }
+  ]
+}

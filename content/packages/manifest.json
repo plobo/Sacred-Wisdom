@@ -1,0 +1,63 @@
+{
+  "manifestVersion": 1,
+  "packages": [
+    {
+      "id": "bhagavad-gita-ch2",
+      "collectionID": "bhagavad-gita",
+      "title": "Bhagavad Gita · Chapter 2 (complete)",
+      "version": 1,
+      "languages": [
+        "sa",
+        "en"
+      ],
+      "fileSize": 46915,
+      "sources": [
+        "The Bhagavad-Gita, tr. Annie Besant, 4th ed. (1922), via Wikisource"
+      ],
+      "license": "Public domain",
+      "sha256": "8171ca68996aaa9108d7fba826611049d8a4bf9a46d622e85609396a0385d171",
+      "schemaVersion": 3,
+      "passageCount": 72,
+      "path": "bhagavad-gita-ch2.json"
+    },
+    {
+      "id": "bible-matthew-5",
+      "collectionID": "bible",
+      "title": "Bible · Matthew 5 (complete)",
+      "version": 1,
+      "languages": [
+        "en"
+      ],
+      "fileSize": 20281,
+      "sources": [
+        "King James Version (1769 Oxford standard text), via getbible.net",
+        "World English Bible, via bible-api.com"
+      ],
+      "license": "Public domain (Crown rights apply in the United Kingdom)",
+      "sha256": "fbaecc7fc12922fb8e0acf632b09a80ee58d3ca1026d6aaaafc1734b68b4763c",
+      "schemaVersion": 3,
+      "passageCount": 48,
+      "path": "bible-matthew-5.json"
+    },
+    {
+      "id": "dhammapada-ch1",
+      "collectionID": "tripitaka",
+      "title": "Dhammapada · Chapter 1 (complete)",
+      "version": 1,
+      "languages": [
+        "pi",
+        "en"
+      ],
+      "fileSize": 16639,
+      "sources": [
+        "SuttaCentral (bilara-data): Mahāsaṅgīti Pali root text and Sujato translation",
+        "The Dhammapada, tr. F. Max Müller (1881), via Project Gutenberg"
+      ],
+      "license": "Public domain; Translation: CC0 1.0. Pali root text: ancient canon (digital edition license to be confirmed)",
+      "sha256": "55f48d4e7edaabc015f16410879373921ce288f3a22e1c9b45184dd681fccb72",
+      "schemaVersion": 3,
+      "passageCount": 20,
+      "path": "dhammapada-ch1.json"
+    }
+  ]
+}

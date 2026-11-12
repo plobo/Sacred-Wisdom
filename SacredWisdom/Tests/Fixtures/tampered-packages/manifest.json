@@ -1,0 +1,25 @@
+{
+  "manifestVersion": 1,
+  "packages": [
+    {
+      "id": "dhammapada-ch1",
+      "collectionID": "tripitaka",
+      "title": "Dhammapada · Chapter 1 (complete)",
+      "version": 1,
+      "languages": [
+        "pi",
+        "en"
+      ],
+      "fileSize": 16639,
+      "sources": [
+        "SuttaCentral (bilara-data): Mahāsaṅgīti Pali root text and Sujato translation",
+        "The Dhammapada, tr. F. Max Müller (1881), via Project Gutenberg"
+      ],
+      "license": "Public domain; Translation: CC0 1.0. Pali root text: ancient canon (digital edition license to be confirmed)",
+      "sha256": "55f48d4e7edaabc015f16410879373921ce288f3a22e1c9b45184dd681fccb72",
+      "schemaVersion": 3,
+      "passageCount": 20,
+      "path": "dhammapada-ch1.json"
+    }
+  ]
+}

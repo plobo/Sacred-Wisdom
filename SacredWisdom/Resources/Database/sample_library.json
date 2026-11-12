@@ -1,0 +1,867 @@
+{
+  "schemaVersion": 3,
+  "religions": [
+    {
+      "id": "hinduism",
+      "name": "Hinduism",
+      "summary": "Ancient dharmic tradition of the Indian subcontinent.",
+      "emblem": "ॐ",
+      "tintKey": "saffron",
+      "sortOrder": 0
+    },
+    {
+      "id": "christianity",
+      "name": "Christianity",
+      "summary": "Faith centered on the life and teachings of Jesus.",
+      "emblem": "✝",
+      "tintKey": "sapphire",
+      "sortOrder": 1
+    },
+    {
+      "id": "islam",
+      "name": "Islam",
+      "summary": "Monotheistic faith revealed through the Prophet Muhammad.",
+      "emblem": "☪",
+      "tintKey": "emerald",
+      "sortOrder": 2
+    },
+    {
+      "id": "judaism",
+      "name": "Judaism",
+      "summary": "Covenantal tradition of the Hebrew Bible and Jewish people.",
+      "emblem": "✡",
+      "tintKey": "azure",
+      "sortOrder": 3
+    },
+    {
+      "id": "buddhism",
+      "name": "Buddhism",
+      "summary": "Path of awakening taught by the Buddha.",
+      "emblem": "☸",
+      "tintKey": "amber",
+      "sortOrder": 4
+    },
+    {
+      "id": "sikhism",
+      "name": "Sikhism",
+      "summary": "Faith founded by Guru Nanak in the Punjab.",
+      "emblem": "☬",
+      "tintKey": "indigo",
+      "sortOrder": 5
+    }
+  ],
+  "sources": [
+    {
+      "id": "besant-1922",
+      "name": "The Bhagavad-Gita, tr. Annie Besant, 4th ed. (1922), via Wikisource",
+      "url": "https://en.wikisource.org/wiki/Bhagavad-Gita_(Besant_4th)",
+      "license": "Public domain",
+      "attribution": "Translated by Annie Besant (1847–1933). Sanskrit text as printed in the same edition."
+    },
+    {
+      "id": "kjv",
+      "name": "King James Version (1769 Oxford standard text), via getbible.net",
+      "url": "https://getbible.net",
+      "license": "Public domain (Crown rights apply in the United Kingdom)",
+      "attribution": "King James Version, 1769 Oxford standard text."
+    },
+    {
+      "id": "web",
+      "name": "World English Bible, via bible-api.com",
+      "url": "https://worldenglish.bible",
+      "license": "Public domain",
+      "attribution": "World English Bible."
+    },
+    {
+      "id": "tanzil",
+      "name": "Tanzil Quran Text (Uthmani), via api.alquran.cloud",
+      "url": "https://tanzil.net",
+      "license": "Tanzil license: verbatim copies permitted with attribution; changes not allowed",
+      "attribution": "Quran text © Tanzil Project (tanzil.net)."
+    },
+    {
+      "id": "pickthall-1930",
+      "name": "The Meaning of the Glorious Koran, tr. Marmaduke Pickthall (1930), via api.alquran.cloud",
+      "url": "https://api.alquran.cloud",
+      "license": "Public domain",
+      "attribution": "Translated by Marmaduke Pickthall (1875–1936)."
+    },
+    {
+      "id": "wlc",
+      "name": "Tanach with Nikkud (Westminster Leningrad Codex), tanach.us, via Sefaria",
+      "url": "http://www.tanach.us/Tanach.xml",
+      "license": "Public domain",
+      "attribution": "Hebrew text from the Westminster Leningrad Codex."
+    },
+    {
+      "id": "jps-1917",
+      "name": "The Holy Scriptures: A New Translation (JPS 1917), via Sefaria",
+      "url": "https://www.sefaria.org",
+      "license": "Public domain",
+      "attribution": "Jewish Publication Society, 1917."
+    },
+    {
+      "id": "suttacentral",
+      "name": "SuttaCentral (bilara-data): Mahāsaṅgīti Pali root text and Sujato translation",
+      "url": "https://suttacentral.net/dhp1-20/en/sujato",
+      "license": "Translation: CC0 1.0. Pali root text: ancient canon (digital edition license to be confirmed)",
+      "attribution": "Translated by Bhikkhu Sujato. Pali from the Mahāsaṅgīti edition."
+    },
+    {
+      "id": "muller-1881",
+      "name": "The Dhammapada, tr. F. Max Müller (1881), via Project Gutenberg",
+      "url": "https://www.gutenberg.org/ebooks/2017",
+      "license": "Public domain",
+      "attribution": "Translated by F. Max Müller (1823–1900)."
+    },
+    {
+      "id": "banidb",
+      "name": "Gurmukhi text of Sri Guru Granth Sahib, via BaniDB (Khalis Foundation)",
+      "url": "https://www.banidb.com",
+      "license": "Gurbani text: public domain (database terms to be confirmed)",
+      "attribution": "Gurmukhi text via BaniDB."
+    },
+    {
+      "id": "macauliffe-1909",
+      "name": "The Sikh Religion, Vol. 1, tr. Max Arthur Macauliffe (1909), via Wikisource",
+      "url": "https://en.wikisource.org/wiki/The_Sikh_Religion/Volume_1/Japji",
+      "license": "Public domain",
+      "attribution": "Translated by Max Arthur Macauliffe (1841–1913)."
+    }
+  ],
+  "collections": [
+    {
+      "id": "bhagavad-gita",
+      "religionID": "hinduism",
+      "name": "Bhagavad Gita",
+      "structureDescription": "18 chapters and verses",
+      "languages": [
+        "sa",
+        "en"
+      ],
+      "availability": "bundled",
+      "originalLanguage": "sa",
+      "originalSourceID": "besant-1922",
+      "defaultTranslationID": "gita-besant"
+    },
+    {
+      "id": "bible",
+      "religionID": "christianity",
+      "name": "Bible",
+      "structureDescription": "Old and New Testament, books, chapters and verses",
+      "languages": [
+        "en"
+      ],
+      "availability": "bundled",
+      "originalLanguage": "en",
+      "originalSourceID": null,
+      "defaultTranslationID": "bible-kjv"
+    },
+    {
+      "id": "quran",
+      "religionID": "islam",
+      "name": "Quran",
+      "structureDescription": "114 Surahs and Ayahs",
+      "languages": [
+        "ar",
+        "en"
+      ],
+      "availability": "bundled",
+      "originalLanguage": "ar",
+      "originalSourceID": "tanzil",
+      "defaultTranslationID": "quran-pickthall"
+    },
+    {
+      "id": "tanakh",
+      "religionID": "judaism",
+      "name": "Tanakh",
+      "structureDescription": "Torah, Nevi'im and Ketuvim",
+      "languages": [
+        "he",
+        "en"
+      ],
+      "availability": "bundled",
+      "originalLanguage": "he",
+      "originalSourceID": "wlc",
+      "defaultTranslationID": "tanakh-jps1917"
+    },
+    {
+      "id": "tripitaka",
+      "religionID": "buddhism",
+      "name": "Tripitaka and Sutras",
+      "structureDescription": "Collections, texts and passages",
+      "languages": [
+        "pi",
+        "en"
+      ],
+      "availability": "bundled",
+      "originalLanguage": "pi",
+      "originalSourceID": "suttacentral",
+      "defaultTranslationID": "dhp-sujato"
+    },
+    {
+      "id": "guru-granth-sahib",
+      "religionID": "sikhism",
+      "name": "Guru Granth Sahib",
+      "structureDescription": "Angs, hymns and passages",
+      "languages": [
+        "pa",
+        "en"
+      ],
+      "availability": "bundled",
+      "originalLanguage": "pa",
+      "originalSourceID": "banidb",
+      "defaultTranslationID": "ggs-macauliffe"
+    }
+  ],
+  "translations": [
+    {
+      "id": "gita-besant",
+      "collectionID": "bhagavad-gita",
+      "name": "Annie Besant (1922)",
+      "languageCode": "en",
+      "translator": "Annie Besant",
+      "year": 1922,
+      "sourceID": "besant-1922"
+    },
+    {
+      "id": "bible-kjv",
+      "collectionID": "bible",
+      "name": "King James Version",
+      "languageCode": "en",
+      "translator": "King James translators",
+      "year": 1769,
+      "sourceID": "kjv"
+    },
+    {
+      "id": "bible-web",
+      "collectionID": "bible",
+      "name": "World English Bible",
+      "languageCode": "en",
+      "translator": "World English Bible translators",
+      "year": 2000,
+      "sourceID": "web"
+    },
+    {
+      "id": "quran-pickthall",
+      "collectionID": "quran",
+      "name": "Pickthall (1930)",
+      "languageCode": "en",
+      "translator": "Marmaduke Pickthall",
+      "year": 1930,
+      "sourceID": "pickthall-1930"
+    },
+    {
+      "id": "tanakh-jps1917",
+      "collectionID": "tanakh",
+      "name": "JPS 1917",
+      "languageCode": "en",
+      "translator": "Jewish Publication Society",
+      "year": 1917,
+      "sourceID": "jps-1917"
+    },
+    {
+      "id": "dhp-sujato",
+      "collectionID": "tripitaka",
+      "name": "Bhikkhu Sujato",
+      "languageCode": "en",
+      "translator": "Bhikkhu Sujato",
+      "year": 2021,
+      "sourceID": "suttacentral"
+    },
+    {
+      "id": "dhp-muller",
+      "collectionID": "tripitaka",
+      "name": "F. Max Müller (1881)",
+      "languageCode": "en",
+      "translator": "F. Max Müller",
+      "year": 1881,
+      "sourceID": "muller-1881"
+    },
+    {
+      "id": "ggs-macauliffe",
+      "collectionID": "guru-granth-sahib",
+      "name": "Macauliffe (1909)",
+      "languageCode": "en",
+      "translator": "Max Arthur Macauliffe",
+      "year": 1909,
+      "sourceID": "macauliffe-1909"
+    }
+  ],
+  "books": [
+    {
+      "id": "gita",
+      "collectionID": "bhagavad-gita",
+      "title": "Bhagavad Gita",
+      "division": "Bhishma Parva, Mahabharata",
+      "sequence": 1
+    },
+    {
+      "id": "bible.matthew",
+      "collectionID": "bible",
+      "title": "Matthew",
+      "division": "New Testament",
+      "sequence": 40
+    },
+    {
+      "id": "quran",
+      "collectionID": "quran",
+      "title": "The Quran",
+      "division": null,
+      "sequence": 1
+    },
+    {
+      "id": "tanakh.psalms",
+      "collectionID": "tanakh",
+      "title": "Psalms (Tehillim)",
+      "division": "Ketuvim",
+      "sequence": 14
+    },
+    {
+      "id": "dhammapada",
+      "collectionID": "tripitaka",
+      "title": "Dhammapada",
+      "division": "Khuddaka Nikāya, Sutta Piṭaka",
+      "sequence": 1
+    },
+    {
+      "id": "ggs.japji",
+      "collectionID": "guru-granth-sahib",
+      "title": "Japji Sahib",
+      "division": "Guru Nanak",
+      "sequence": 1
+    }
+  ],
+  "sections": [
+    {
+      "id": "gita.ch2",
+      "bookID": "gita",
+      "title": "Chapter 2",
+      "sequence": 2
+    },
+    {
+      "id": "bible.matthew.5",
+      "bookID": "bible.matthew",
+      "title": "Chapter 5",
+      "sequence": 5
+    },
+    {
+      "id": "quran.surah1",
+      "bookID": "quran",
+      "title": "Surah 1 · Al-Fatihah (The Opening)",
+      "sequence": 1
+    },
+    {
+      "id": "tanakh.psalms.23",
+      "bookID": "tanakh.psalms",
+      "title": "Psalm 23",
+      "sequence": 23
+    },
+    {
+      "id": "dhammapada.ch1",
+      "bookID": "dhammapada",
+      "title": "Chapter 1 · Yamakavagga (Pairs)",
+      "sequence": 1
+    },
+    {
+      "id": "ggs.ang1",
+      "bookID": "ggs.japji",
+      "title": "Ang 1",
+      "sequence": 1
+    }
+  ],
+  "themes": [
+    {
+      "id": "mercy",
+      "name": "Mercy"
+    },
+    {
+      "id": "divine-name",
+      "name": "The Divine Name"
+    },
+    {
+      "id": "guidance",
+      "name": "Guidance on the Path"
+    },
+    {
+      "id": "purity",
+      "name": "Purity of Heart and Mind"
+    },
+    {
+      "id": "spiritual-hunger",
+      "name": "Hunger for the Divine"
+    },
+    {
+      "id": "peace",
+      "name": "Peace and the End of Hatred"
+    },
+    {
+      "id": "comfort",
+      "name": "Comfort in Sorrow"
+    },
+    {
+      "id": "action-consequence",
+      "name": "Action and Its Fruits"
+    },
+    {
+      "id": "sovereignty",
+      "name": "God's Sovereignty"
+    }
+  ],
+  "passages": [
+    {
+      "id": "gita.2.47",
+      "sectionID": "gita.ch2",
+      "sequence": 47,
+      "reference": "Bhagavad Gita 2.47",
+      "originalText": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।\nमा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥ ४७ ॥",
+      "texts": {
+        "gita-besant": "Thy business is with the action only, never with its fruits; so let not the fruit of action be thy motive, nor be thou to inaction attached."
+      },
+      "themes": [
+        "action-consequence"
+      ]
+    },
+    {
+      "id": "gita.2.48",
+      "sectionID": "gita.ch2",
+      "sequence": 48,
+      "reference": "Bhagavad Gita 2.48",
+      "originalText": "योगस्थः कुरु कर्माणि सङ्गं त्यक्त्वा धनञ्जय ।\nसिद्ध्यसिद्ध्योः समो भूत्वा समत्वं योग उच्यते ॥ ४८ ॥",
+      "texts": {
+        "gita-besant": "Perform action, O Dhananjaya, dwelling in union with the divine, renouncing attachments and balanced evenly in success and failure: equilibrium is called yoga."
+      },
+      "themes": []
+    },
+    {
+      "id": "gita.2.49",
+      "sectionID": "gita.ch2",
+      "sequence": 49,
+      "reference": "Bhagavad Gita 2.49",
+      "originalText": "दूरेण ह्यवरं कर्म बुद्धियोगाद्धनञ्जय ।\nबुद्धौ शरणमन्विच्छ कृपणाः फलहेतवः ॥ ४९ ॥",
+      "texts": {
+        "gita-besant": "Far lower than the Yoga of Discrimination is action, O Dhananjaya. Take thou refuge in the Pure Reason; pitiable are they who work for fruit."
+      },
+      "themes": [
+        "action-consequence"
+      ]
+    },
+    {
+      "id": "gita.2.50",
+      "sectionID": "gita.ch2",
+      "sequence": 50,
+      "reference": "Bhagavad Gita 2.50",
+      "originalText": "बुद्धियुक्तो जहातीह उभे सुकृतदुष्कृते ।\nतस्माद्योगाय युज्यस्व योगः कर्मसु कौशलम् ॥ ५० ॥",
+      "texts": {
+        "gita-besant": "United to the Pure Reason one abandoneth here both good and evil deeds; therefore cleave thou to yoga; yoga is skill in action."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.3",
+      "sectionID": "bible.matthew.5",
+      "sequence": 3,
+      "reference": "Matthew 5:3",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Blessed are the poor in spirit: for theirs is the kingdom of heaven.",
+        "bible-web": "“Blessed are the poor in spirit, for theirs is the Kingdom of Heaven."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.4",
+      "sectionID": "bible.matthew.5",
+      "sequence": 4,
+      "reference": "Matthew 5:4",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Blessed are they that mourn: for they shall be comforted.",
+        "bible-web": "Blessed are those who mourn, for they shall be comforted."
+      },
+      "themes": [
+        "comfort"
+      ]
+    },
+    {
+      "id": "bible.matthew.5.5",
+      "sectionID": "bible.matthew.5",
+      "sequence": 5,
+      "reference": "Matthew 5:5",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Blessed are the meek: for they shall inherit the earth.",
+        "bible-web": "Blessed are the gentle, for they shall inherit the earth."
+      },
+      "themes": []
+    },
+    {
+      "id": "bible.matthew.5.6",
+      "sectionID": "bible.matthew.5",
+      "sequence": 6,
+      "reference": "Matthew 5:6",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Blessed are they which do hunger and thirst after righteousness: for they shall be filled.",
+        "bible-web": "Blessed are those who hunger and thirst after righteousness, for they shall be filled."
+      },
+      "themes": [
+        "spiritual-hunger"
+      ]
+    },
+    {
+      "id": "bible.matthew.5.7",
+      "sectionID": "bible.matthew.5",
+      "sequence": 7,
+      "reference": "Matthew 5:7",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Blessed are the merciful: for they shall obtain mercy.",
+        "bible-web": "Blessed are the merciful, for they shall obtain mercy."
+      },
+      "themes": [
+        "mercy"
+      ]
+    },
+    {
+      "id": "bible.matthew.5.8",
+      "sectionID": "bible.matthew.5",
+      "sequence": 8,
+      "reference": "Matthew 5:8",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Blessed are the pure in heart: for they shall see God.",
+        "bible-web": "Blessed are the pure in heart, for they shall see God."
+      },
+      "themes": [
+        "purity"
+      ]
+    },
+    {
+      "id": "bible.matthew.5.9",
+      "sectionID": "bible.matthew.5",
+      "sequence": 9,
+      "reference": "Matthew 5:9",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Blessed are the peacemakers: for they shall be called the children of God.",
+        "bible-web": "Blessed are the peacemakers, for they shall be called children of God."
+      },
+      "themes": [
+        "peace"
+      ]
+    },
+    {
+      "id": "bible.matthew.5.10",
+      "sectionID": "bible.matthew.5",
+      "sequence": 10,
+      "reference": "Matthew 5:10",
+      "originalText": null,
+      "texts": {
+        "bible-kjv": "Blessed are they which are persecuted for righteousness’ sake: for theirs is the kingdom of heaven.",
+        "bible-web": "Blessed are those who have been persecuted for righteousness’ sake, for theirs is the Kingdom of Heaven."
+      },
+      "themes": []
+    },
+    {
+      "id": "quran.1.1",
+      "sectionID": "quran.surah1",
+      "sequence": 1,
+      "reference": "Al-Fatihah 1:1",
+      "originalText": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+      "texts": {
+        "quran-pickthall": "In the name of Allah, the Beneficent, the Merciful."
+      },
+      "themes": [
+        "mercy",
+        "divine-name"
+      ]
+    },
+    {
+      "id": "quran.1.2",
+      "sectionID": "quran.surah1",
+      "sequence": 2,
+      "reference": "Al-Fatihah 1:2",
+      "originalText": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
+      "texts": {
+        "quran-pickthall": "Praise be to Allah, Lord of the Worlds,"
+      },
+      "themes": [
+        "sovereignty"
+      ]
+    },
+    {
+      "id": "quran.1.3",
+      "sectionID": "quran.surah1",
+      "sequence": 3,
+      "reference": "Al-Fatihah 1:3",
+      "originalText": "ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+      "texts": {
+        "quran-pickthall": "The Beneficent, the Merciful."
+      },
+      "themes": [
+        "mercy"
+      ]
+    },
+    {
+      "id": "quran.1.4",
+      "sectionID": "quran.surah1",
+      "sequence": 4,
+      "reference": "Al-Fatihah 1:4",
+      "originalText": "مَٰلِكِ يَوْمِ ٱلدِّينِ",
+      "texts": {
+        "quran-pickthall": "Master of the Day of Judgment,"
+      },
+      "themes": [
+        "sovereignty"
+      ]
+    },
+    {
+      "id": "quran.1.5",
+      "sectionID": "quran.surah1",
+      "sequence": 5,
+      "reference": "Al-Fatihah 1:5",
+      "originalText": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "texts": {
+        "quran-pickthall": "Thee (alone) we worship; Thee (alone) we ask for help."
+      },
+      "themes": []
+    },
+    {
+      "id": "quran.1.6",
+      "sectionID": "quran.surah1",
+      "sequence": 6,
+      "reference": "Al-Fatihah 1:6",
+      "originalText": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+      "texts": {
+        "quran-pickthall": "Show us the straight path,"
+      },
+      "themes": [
+        "guidance"
+      ]
+    },
+    {
+      "id": "quran.1.7",
+      "sectionID": "quran.surah1",
+      "sequence": 7,
+      "reference": "Al-Fatihah 1:7",
+      "originalText": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+      "texts": {
+        "quran-pickthall": "The path of those whom Thou hast favoured; Not the (path) of those who earn Thine anger nor of those who go astray."
+      },
+      "themes": [
+        "guidance"
+      ]
+    },
+    {
+      "id": "tanakh.psalms.23.1",
+      "sectionID": "tanakh.psalms.23",
+      "sequence": 1,
+      "reference": "Psalms 23:1",
+      "originalText": "מִזְמוֹר לְדָוִד יְהוָה רֹעִי לֹא אֶחְסָר׃",
+      "texts": {
+        "tanakh-jps1917": "A Psalm of David. The LORD is my shepherd; I shall not want."
+      },
+      "themes": []
+    },
+    {
+      "id": "tanakh.psalms.23.2",
+      "sectionID": "tanakh.psalms.23",
+      "sequence": 2,
+      "reference": "Psalms 23:2",
+      "originalText": "בִּנְאוֹת דֶּשֶׁא יַרְבִּיצֵנִי עַל־מֵי מְנֻחוֹת יְנַהֲלֵנִי׃",
+      "texts": {
+        "tanakh-jps1917": "He maketh me to lie down in green pastures; He leadeth me beside the still waters."
+      },
+      "themes": [
+        "guidance"
+      ]
+    },
+    {
+      "id": "tanakh.psalms.23.3",
+      "sectionID": "tanakh.psalms.23",
+      "sequence": 3,
+      "reference": "Psalms 23:3",
+      "originalText": "נַפְשִׁי יְשׁוֹבֵב יַנְחֵנִי בְמַעְגְּלֵי־צֶדֶק לְמַעַן שְׁמוֹ׃",
+      "texts": {
+        "tanakh-jps1917": "He restoreth my soul; He guideth me in straight paths for His name's sake."
+      },
+      "themes": [
+        "divine-name",
+        "guidance"
+      ]
+    },
+    {
+      "id": "tanakh.psalms.23.4",
+      "sectionID": "tanakh.psalms.23",
+      "sequence": 4,
+      "reference": "Psalms 23:4",
+      "originalText": "גַּם כִּי־אֵלֵךְ בְּגֵיא צַלְמָוֶת לֹא־אִירָא רָע כִּי־אַתָּה עִמָּדִי שִׁבְטְךָ וּמִשְׁעַנְתֶּךָ הֵמָּה יְנַחֲמֻנִי׃",
+      "texts": {
+        "tanakh-jps1917": "Yea, though I walk through the valley of the shadow of death, I will fear no evil, for Thou art with me; Thy rod and Thy staff, they comfort me."
+      },
+      "themes": [
+        "comfort"
+      ]
+    },
+    {
+      "id": "tanakh.psalms.23.5",
+      "sectionID": "tanakh.psalms.23",
+      "sequence": 5,
+      "reference": "Psalms 23:5",
+      "originalText": "תַּעֲרֹךְ לְפָנַי שֻׁלְחָן נֶגֶד צֹרְרָי דִּשַּׁנְתָּ בַשֶּׁמֶן רֹאשִׁי כּוֹסִי רְוָיָה׃",
+      "texts": {
+        "tanakh-jps1917": "Thou preparest a table before me in the presence of mine enemies; Thou hast anointed my head with oil; my cup runneth over."
+      },
+      "themes": []
+    },
+    {
+      "id": "tanakh.psalms.23.6",
+      "sectionID": "tanakh.psalms.23",
+      "sequence": 6,
+      "reference": "Psalms 23:6",
+      "originalText": "אַךְ טוֹב וָחֶסֶד יִרְדְּפוּנִי כָּל־יְמֵי חַיָּי וְשַׁבְתִּי בְּבֵית־יְהוָה לְאֹרֶךְ יָמִים׃",
+      "texts": {
+        "tanakh-jps1917": "Surely goodness and mercy shall follow me all the days of my life; And I shall dwell in the house of the LORD for ever."
+      },
+      "themes": [
+        "mercy"
+      ]
+    },
+    {
+      "id": "dhammapada.1",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 1,
+      "reference": "Dhammapada 1",
+      "originalText": "Manopubbaṅgamā dhammā,\nmanoseṭṭhā manomayā;\nManasā ce paduṭṭhena,\nbhāsati vā karoti vā;\nTato naṁ dukkhamanveti,\ncakkaṁva vahato padaṁ.",
+      "texts": {
+        "dhp-sujato": "Intention is the leader of things;\nintention is first, they’re made by intention.\nIf with corrupt intent\nyou speak or act,\nsuffering follows you,\nlike a wheel, the ox’s foot.",
+        "dhp-muller": "All that we are is the result of what we have thought: it is founded on our thoughts, it is made up of our thoughts. If a man speaks or acts with an evil thought, pain follows him, as the wheel follows the foot of the ox that draws the carriage."
+      },
+      "themes": [
+        "action-consequence"
+      ]
+    },
+    {
+      "id": "dhammapada.2",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 2,
+      "reference": "Dhammapada 2",
+      "originalText": "Manopubbaṅgamā dhammā,\nmanoseṭṭhā manomayā;\nManasā ce pasannena,\nbhāsati vā karoti vā;\nTato naṁ sukhamanveti,\nchāyāva anapāyinī.",
+      "texts": {
+        "dhp-sujato": "Intention is the leader of things;\nintention is first, they’re made by intention.\nIf with pure intent\nyou speak or act,\nhappiness follows you\nlike a shadow that never leaves.",
+        "dhp-muller": "All that we are is the result of what we have thought: it is founded on our thoughts, it is made up of our thoughts. If a man speaks or acts with a pure thought, happiness follows him, like a shadow that never leaves him."
+      },
+      "themes": [
+        "purity",
+        "action-consequence"
+      ]
+    },
+    {
+      "id": "dhammapada.3",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 3,
+      "reference": "Dhammapada 3",
+      "originalText": "Akkocchi maṁ avadhi maṁ,\najini maṁ ahāsi me;\nYe ca taṁ upanayhanti,\nveraṁ tesaṁ na sammati.",
+      "texts": {
+        "dhp-sujato": "“They abused me, they hit me!\nThey beat me, they robbed me!”\nFor those who bear such a grudge,\nhatred is never laid to rest.",
+        "dhp-muller": "\"He abused me, he beat me, he defeated me, he robbed me,\"—in those who harbour such thoughts hatred will never cease."
+      },
+      "themes": [
+        "peace"
+      ]
+    },
+    {
+      "id": "dhammapada.4",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 4,
+      "reference": "Dhammapada 4",
+      "originalText": "Akkocchi maṁ avadhi maṁ,\najini maṁ ahāsi me;\nYe ca taṁ nupanayhanti,\nveraṁ tesūpasammati.",
+      "texts": {
+        "dhp-sujato": "“They abused me, they hit me!\nThey beat me, they robbed me!”\nFor those who bear no such grudge,\nhatred is laid to rest.",
+        "dhp-muller": "\"He abused me, he beat me, he defeated me, he robbed me,\"—in those who do not harbour such thoughts hatred will cease."
+      },
+      "themes": [
+        "peace"
+      ]
+    },
+    {
+      "id": "dhammapada.5",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 5,
+      "reference": "Dhammapada 5",
+      "originalText": "Na hi verena verāni,\nsammantīdha kudācanaṁ;\nAverena ca sammanti,\nesa dhammo sanantano.",
+      "texts": {
+        "dhp-sujato": "For never is hatred\nlaid to rest by hate,\nit’s laid to rest by love:\nthis is an ancient teaching.",
+        "dhp-muller": "For hatred does not cease by hatred at any time: hatred ceases by love, this is an old rule."
+      },
+      "themes": [
+        "peace"
+      ]
+    },
+    {
+      "id": "dhammapada.6",
+      "sectionID": "dhammapada.ch1",
+      "sequence": 6,
+      "reference": "Dhammapada 6",
+      "originalText": "Pare ca na vijānanti,\nmayamettha yamāmase;\nYe ca tattha vijānanti,\ntato sammanti medhagā.",
+      "texts": {
+        "dhp-sujato": "When others do not understand,\nlet us, who do understand this,\nrestrain ourselves in this regard;\nfor that is how conflicts are laid to rest.",
+        "dhp-muller": "The world does not know that we must all come to an end here;—but those who know it, their quarrels cease at once."
+      },
+      "themes": [
+        "peace"
+      ]
+    },
+    {
+      "id": "ggs.1.mool-mantar",
+      "sectionID": "ggs.ang1",
+      "sequence": 1,
+      "reference": "Ang 1 · Mool Mantar",
+      "originalText": "ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ ਨਿਰਭਉ ਨਿਰਵੈਰੁ ਅਕਾਲ ਮੂਰਤਿ ਅਜੂਨੀ ਸੈਭੰ ਗੁਰ ਪ੍ਰਸਾਦਿ ॥",
+      "texts": {
+        "ggs-macauliffe": "There is but one God whose name is true, the Creator, devoid of fear and enmity, immortal, unborn, self-existent; by the favour of the Guru."
+      },
+      "themes": [
+        "divine-name"
+      ]
+    },
+    {
+      "id": "ggs.1.salok",
+      "sectionID": "ggs.ang1",
+      "sequence": 2,
+      "reference": "Ang 1 · Japji Sahib, Salok",
+      "originalText": "ਆਦਿ ਸਚੁ ਜੁਗਾਦਿ ਸਚੁ ॥\nਹੈ ਭੀ ਸਚੁ ਨਾਨਕ ਹੋਸੀ ਭੀ ਸਚੁ ॥੧॥",
+      "texts": {
+        "ggs-macauliffe": "The True One was in the beginning; the True One was in the primal age. The True One is now also, O Nanak; the True One also shall be."
+      },
+      "themes": []
+    },
+    {
+      "id": "ggs.1.pauri-1",
+      "sectionID": "ggs.ang1",
+      "sequence": 3,
+      "reference": "Ang 1 · Japji Sahib, Pauri 1",
+      "originalText": "ਸੋਚੈ ਸੋਚਿ ਨ ਹੋਵਈ ਜੇ ਸੋਚੀ ਲਖ ਵਾਰ ॥\nਚੁਪੈ ਚੁਪ ਨ ਹੋਵਈ ਜੇ ਲਾਇ ਰਹਾ ਲਿਵ ਤਾਰ ॥\nਭੁਖਿਆ ਭੁਖ ਨ ਉਤਰੀ ਜੇ ਬੰਨਾ ਪੁਰੀਆ ਭਾਰ ॥\nਸਹਸ ਸਿਆਣਪਾ ਲਖ ਹੋਹਿ ਤ ਇਕ ਨ ਚਲੈ ਨਾਲਿ ॥\nਕਿਵ ਸਚਿਆਰਾ ਹੋਈਐ ਕਿਵ ਕੂੜੈ ਤੁਟੈ ਪਾਲਿ ॥\nਹੁਕਮਿ ਰਜਾਈ ਚਲਣਾ ਨਾਨਕ ਲਿਖਿਆ ਨਾਲਿ ॥੧॥",
+      "texts": {
+        "ggs-macauliffe": "By thinking I cannot obtain a conception of Him, even though I think hundreds of thousands of times. Even though I be silent and keep my attention firmly fixed on Him, I cannot preserve silence. The hunger of the hungry for God subsideth not though they obtain the load of the worlds. If man should have thousands and hundreds of thousands of devices, even one would not assist him in obtaining God. How shall man become true before God? How shall the veil of falsehood be rent? By walking, O Nanak, according to the will of the Commander as preordained."
+      },
+      "themes": [
+        "spiritual-hunger"
+      ]
+    },
+    {
+      "id": "ggs.1.pauri-2",
+      "sectionID": "ggs.ang1",
+      "sequence": 4,
+      "reference": "Ang 1 · Japji Sahib, Pauri 2",
+      "originalText": "ਹੁਕਮੀ ਹੋਵਨਿ ਆਕਾਰ ਹੁਕਮੁ ਨ ਕਹਿਆ ਜਾਈ ॥\nਹੁਕਮੀ ਹੋਵਨਿ ਜੀਅ ਹੁਕਮਿ ਮਿਲੈ ਵਡਿਆਈ ॥\nਹੁਕਮੀ ਉਤਮੁ ਨੀਚੁ ਹੁਕਮਿ ਲਿਖਿ ਦੁਖ ਸੁਖ ਪਾਈਅਹਿ ॥\nਇਕਨਾ ਹੁਕਮੀ ਬਖਸੀਸ ਇਕਿ ਹੁਕਮੀ ਸਦਾ ਭਵਾਈਅਹਿ ॥\nਹੁਕਮੈ ਅੰਦਰਿ ਸਭੁ ਕੋ ਬਾਹਰਿ ਹੁਕਮ ਨ ਕੋਇ ॥\nਨਾਨਕ ਹੁਕਮੈ ਜੇ ਬੁਝੈ ਤ ਹਉਮੈ ਕਹੈ ਨ ਕੋਇ ॥੨॥",
+      "texts": {
+        "ggs-macauliffe": "By His order bodies are produced; His order cannot be described. By His order souls are infused into them; by His order greatness is obtained. By His order men are high or low; by His order they obtain preordained pain or pleasure. By His order some obtain their reward; by His order others must ever wander in transmigration. All are subject to His order; none is exempt from it. He who understandeth God's order, O Nanak, is never guilty of egoism."
+      },
+      "themes": [
+        "sovereignty"
+      ]
+    }
+  ]
+}
