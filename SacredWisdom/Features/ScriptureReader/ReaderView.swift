@@ -26,14 +26,17 @@ struct ReaderView: View {
                 // Identifier lives on the scroll view: on the outer container it would
                 // override the identifiers of the navigation bar's buttons.
                 .accessibilityIdentifier("screen.reader")
-                .safeAreaInset(edge: .bottom) {
-                    ReaderNavigationBar(
-                        reference: page.passage.reference,
-                        canGoPrevious: viewModel.canGoPrevious,
-                        canGoNext: viewModel.canGoNext,
-                        onPrevious: { Task { await viewModel.goToPrevious() } },
-                        onNext: { Task { await viewModel.goToNext() } }
-                    )
+                .safeAreaInset(edge: .bottom, spacing: 0) {
+                    VStack(spacing: 0) {
+                        if let audio = viewModel.audio, audio.status != .idle {
+                            AudioPlayerBar(controller: audio)
+                                .padding(.horizontal, SWSpacing.l)
+                                .padding(.vertical, SWSpacing.s)
+                                .background(.bar)
+                            Divider()
+                        }
+                        readerNavigationBar(page)
+                    }
                 }
                 .navigationTitle(page.collection.name)
                 .navigationBarTitleDisplayMode(.inline)
@@ -43,6 +46,17 @@ struct ReaderView: View {
         .swScreenBackground()
         .bookmarkAlerts(viewModel.bookmarks)
         .task { if viewModel.state == .idle { await viewModel.load() } }
+        .onDisappear { viewModel.stopListening() }
+    }
+
+    private func readerNavigationBar(_ page: ReaderPage) -> some View {
+        ReaderNavigationBar(
+            reference: page.passage.reference,
+            canGoPrevious: viewModel.canGoPrevious,
+            canGoNext: viewModel.canGoNext,
+            onPrevious: { Task { await viewModel.goToPrevious() } },
+            onNext: { Task { await viewModel.goToNext() } }
+        )
     }
 
     @ToolbarContentBuilder

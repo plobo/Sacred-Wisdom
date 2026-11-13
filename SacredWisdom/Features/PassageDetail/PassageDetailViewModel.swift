@@ -16,20 +16,29 @@ final class PassageDetailViewModel {
     private(set) var state: State = .idle
     private(set) var primaryTranslationID: String?
     let bookmarks: PassageBookmarkController
+    /// Listening; nil when the screen is built without audio (some tests).
+    let audio: AudioPlaybackController?
+    /// The translation being listened to (the primary one until the listener picks another).
+    private(set) var audioTranslationID: String?
 
     let passageID: String
     private let initialTranslationID: String?
     private let loadDetail: any LoadPassageDetailUseCaseProtocol
     private let preferences: any TranslationPreferenceStore
     private let userData: UserDataContext
+    private let resolveAudio: any ResolveAudioTrackUseCaseProtocol
 
     init(
         passageID: String,
         initialTranslationID: String? = nil,
         loadDetail: any LoadPassageDetailUseCaseProtocol,
         preferences: any TranslationPreferenceStore,
-        userData: UserDataContext
+        userData: UserDataContext,
+        audio: AudioPlaybackController? = nil,
+        resolveAudio: any ResolveAudioTrackUseCaseProtocol = ResolveAudioTrackUseCase()
     ) {
+        self.audio = audio
+        self.resolveAudio = resolveAudio
         self.passageID = passageID
         self.initialTranslationID = initialTranslationID
         self.loadDetail = loadDetail
@@ -47,6 +56,7 @@ final class PassageDetailViewModel {
             let detail = try await loadDetail.execute(passageID: passageID)
             primaryTranslationID = await resolvePrimaryTranslation(detail)
             state = .loaded(detail)
+            await selectAudioTranslation(primaryTranslationID)
             await bookmarks.show(passageID: passageID)
             await userData.recordView(of: passageID)
         } catch {
@@ -60,6 +70,25 @@ final class PassageDetailViewModel {
         if let preferred = await preferences.preferredTranslationID(collectionID: detail.collection.id),
            available.contains(preferred) { return preferred }
         return detail.passage.texts.first?.translation.id
+    }
+
+    // MARK: Listening
+
+    /// Picks which translation to hear; playing audio carries on in the new one.
+    func selectAudioTranslation(_ translationID: String?) async {
+        guard let audio, let passage = detail?.passage else { return }
+        let wasPlaying = audio.isPlaying
+        audioTranslationID = translationID
+        let availability = await resolveAudio.execute(passage: passage, translationID: translationID)
+        audio.load(availability, autoplay: wasPlaying)
+    }
+
+    var audioTranslationChoices: [AudioPlayerBar.TranslationChoice] {
+        orderedTexts.map { .init(id: $0.translation.id, name: $0.translation.name) }
+    }
+
+    func stopListening() {
+        audio?.stop()
     }
 
     // MARK: Display

@@ -19,6 +19,8 @@ final class ReaderViewModel {
     private(set) var fontScale: Double = 1.0
     private(set) var isNavigating = false
     let bookmarks: PassageBookmarkController
+    /// Listening; nil when the screen is built without audio (some tests).
+    let audio: AudioPlaybackController?
 
     private var start: ReaderStart
     /// Translation requested by the caller (e.g. a search match); wins over the stored preference once.
@@ -27,6 +29,9 @@ final class ReaderViewModel {
     private let preferences: any TranslationPreferenceStore
     private let userData: UserDataContext
     private let display: AppPreferences?
+    private let resolveAudio: any ResolveAudioTrackUseCaseProtocol
+    /// Set when a passage finished playing and the reader moved on, so the next passage starts by itself.
+    private var continuesListening = false
 
     init(
         start: ReaderStart,
@@ -34,8 +39,12 @@ final class ReaderViewModel {
         loadPage: any LoadReaderPageUseCaseProtocol,
         preferences: any TranslationPreferenceStore,
         userData: UserDataContext = .unavailable(),
-        display: AppPreferences? = nil
+        display: AppPreferences? = nil,
+        audio: AudioPlaybackController? = nil,
+        resolveAudio: any ResolveAudioTrackUseCaseProtocol = ResolveAudioTrackUseCase()
     ) {
+        self.audio = audio
+        self.resolveAudio = resolveAudio
         self.display = display
         fontScale = display?.readerTextScale ?? 1
         self.start = start
@@ -44,6 +53,7 @@ final class ReaderViewModel {
         self.preferences = preferences
         self.userData = userData
         self.bookmarks = PassageBookmarkController(userData: userData)
+        audio?.onFinished = { [weak self] in self?.passageFinishedPlaying() }
     }
 
     // MARK: Loading and navigation
@@ -84,6 +94,7 @@ final class ReaderViewModel {
                 }
             }
             state = .loaded(page)
+            await prepareAudio()
             await bookmarks.show(passageID: page.passage.id)
             await userData.recordView(of: page.passage.id)
         } catch {
@@ -97,6 +108,32 @@ final class ReaderViewModel {
         guard let page, page.translations.contains(where: { $0.id == translationID }) else { return }
         selectedTranslationID = translationID
         await preferences.setPreferredTranslationID(translationID, collectionID: page.collection.id)
+        await prepareAudio()
+    }
+
+    // MARK: Listening
+
+    /// Loads the shown passage's audio. Keeps listening across passages: if audio was playing (or a passage just
+    /// finished and continuous playback moved on), the new passage starts playing.
+    private func prepareAudio() async {
+        guard let audio, let page else { return }
+        let autoplay = audio.isPlaying || continuesListening
+        continuesListening = false
+        let availability = await resolveAudio.execute(passage: page.passage, translationID: selectedTranslationID)
+        guard self.page?.passage.id == page.passage.id else { return }
+        audio.load(availability, autoplay: autoplay)
+    }
+
+    private func passageFinishedPlaying() {
+        guard display?.continuousPlayback ?? true, page?.nextPassageID != nil else { return }
+        continuesListening = true
+        Task { await goToNext() }
+    }
+
+    /// Leaving the reader stops listening, so audio never plays with no controls on screen.
+    func stopListening() {
+        continuesListening = false
+        audio?.stop()
     }
 
     // MARK: Font size

@@ -134,8 +134,7 @@ input ─▶ SearchQueryParser ─▶ SearchQuery ─▶ CombinedSearchRepositor
   `-ui-testing-reset-user-data`), which lets a UI test relaunch the app and check persistence.
 - **Sharing** (`PassageShareFormatter`) shares the original and translation verbatim, with reference, translation
   name, and every source's attribution and license (Tanzil permits only verbatim copies, with credit).
-- **Deferred:** audio playback (spec §11; no audio assets or sources yet), editing translation preferences from
-  details, iCloud sync.
+- **Deferred:** editing translation preferences from details, iCloud sync. (Audio arrived in Phase 10.)
 
 ## Siri, Shortcuts and voice input (Phase 6)
 
@@ -310,6 +309,39 @@ input ─▶ SearchQueryParser ─▶ SearchQuery ─▶ CombinedSearchRepositor
     `TEST_RUNNER_SW_APPSTORE_SCREENSHOTS=1`.
   - Listing, privacy answers and review notes: `AppStore/metadata.md`.
   - The Release configuration builds for device (unsigned) and simulator. Signing needs a development team.
+
+## Audio and text-to-speech (Phase 10, spec §11)
+- **Abstraction:** `AudioService` (`Domain/Repositories/AudioService.swift`), `@MainActor`, one request at a time;
+  a new request stops the previous one, whose handler gets `.superseded`. Implementations:
+  `SystemSpeechAudioService` (AVSpeechSynthesizer, on device), `RecordedAudioService` (AVAudioPlayer for licensed
+  files), `RoutingAudioService` (sends recordings and text to the right one; the only source of `.superseded`, so a
+  request is told once) and `ScriptedAudioService` (silent; unit tests drive it with `emit`, UI tests use a 2 s
+  self-playing mode). The app has a single service, so only one passage plays at a time.
+- **What may be heard:** `ResolveAudioTrackUseCase`. A licensed recording from `RecordedAudioCatalog` wins (the app
+  ships `EmptyRecordedAudioCatalog`: no recordings are licensed yet). Otherwise the translation is synthesized only
+  if `AudioLicensePolicy` permits its source license: public domain, CC0, CC BY, CC BY-SA. ND, NC and anything
+  unrecognized are refused, and the player says why. Every bundled and downloadable translation qualifies
+  (`AudioIntegrationTests`). The spoken text is the verified text, only trimmed.
+- **Originals are never synthesized.** Synthetic recitation of the Quran or Gurbani would misrepresent how they are
+  recited, Tanzil forbids altering the text, and devices have no Sanskrit, Pali or Gurmukhi voices. Originals can
+  come later as licensed recordings through the catalog.
+- **Labeling:** synthesized audio is captioned "<translation>, system voice", so it is never taken for a recording.
+- **`AudioPlaybackController`** (`Features/Shared`, one per screen): status (idle/unavailable/ready/playing/paused/
+  finished/failed), progress, speed, voices. Speed and voice are fixed once an utterance starts, so changing them
+  restarts at the current word (`wordStart`). A change made while paused applies on resume.
+- **Screens:** `AudioPlayerBar` sits above the reader's navigation bar and at the bottom of verse details. It has
+  play/pause, progress, a speed menu (0.75–1.5×), a voice menu (installed voices for the language, best quality and
+  the user's region first, novelty and Personal Voices excluded) and, in details, which translation to hear. The
+  reader keeps listening when you move between passages. With "Continue to Next Passage" on (the default) it
+  advances when a passage finishes. Leaving a screen stops its audio, so nothing plays without controls.
+- **Preferences** (`AppPreferences`): speed, continuous playback, voice per base language. Settings has a
+  Listening section.
+- **Audio session:** `.playback` / `.spokenAudio` (heard with the silent switch on). It is deactivated with
+  `notifyOthersOnDeactivation`. Interruptions pause playback and show it as paused. There is no background-audio
+  mode, since playback stops when its screen goes away.
+- **UI testing:** the scripted service is used, and `-ui-testing-audio-no-voice` simulates a device with no voice.
+- **Not verified here:** real voices on device (simulator voices vary). The AVSpeechSynthesizer path is covered by
+  its helpers (`wordStart`, `rate`). `RecordedAudioService` is tested end to end with a generated tone file.
 
 ## Reader
 - `ReaderViewModel` shows one passage; previous/next follow reading order across sections and books

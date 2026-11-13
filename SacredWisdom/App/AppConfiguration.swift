@@ -35,6 +35,10 @@ struct AppConfiguration: Sendable {
     static let scriptedAIArgument = "-ui-testing-ai-scripted"
     var usesScriptedAI: Bool { isUITesting && ProcessInfo.processInfo.arguments.contains(Self.scriptedAIArgument) }
 
+    /// UI tests only: the scripted audio service has no voices, so listening is unavailable.
+    static let audioNoVoiceArgument = "-ui-testing-audio-no-voice"
+    var audioHasNoVoices: Bool { isUITesting && ProcessInfo.processInfo.arguments.contains(Self.audioNoVoiceArgument) }
+
     /// UI tests only: `-ui-testing-speech "<words>"`, or `-ui-testing-speech-denied`.
     static let speechTranscriptArgument = "-ui-testing-speech"
     static let speechDeniedArgument = "-ui-testing-speech-denied"

@@ -45,6 +45,22 @@ struct SettingsView: View {
                     .foregroundStyle(SWColors.textSecondary)
             }
             Section {
+                Picker("Playback Speed", selection: Binding(get: { viewModel.display.playbackSpeed },
+                                                            set: { viewModel.display.playbackSpeed = $0 })) {
+                    ForEach(PlaybackSpeed.all, id: \.self) { Text(PlaybackSpeed.label($0)).tag($0) }
+                }
+                .accessibilityIdentifier("settings.playbackSpeed")
+                Toggle("Continue to Next Passage", isOn: Binding(get: { viewModel.display.continuousPlayback },
+                                                                 set: { viewModel.display.continuousPlayback = $0 }))
+                    .accessibilityIdentifier("settings.continuousPlayback")
+            } header: {
+                Text("Listening")
+                    .foregroundStyle(SWColors.textSecondary)
+            } footer: {
+                Text("Passages are read aloud on this device by a system voice, only from translations whose license allows it. Original-language texts are not read aloud.")
+                    .foregroundStyle(SWColors.textSecondary)
+            }
+            Section {
                 NavigationLink(value: AppRoute.offlineContent) {
                     Label("Offline Content", systemImage: "arrow.down.circle")
                 }

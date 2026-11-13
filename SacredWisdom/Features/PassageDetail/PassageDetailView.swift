@@ -22,6 +22,22 @@ struct PassageDetailView: View {
                 }
                 // On the scroll view, not the container, so child identifiers survive.
                 .accessibilityIdentifier("screen.passageDetail")
+                .safeAreaInset(edge: .bottom, spacing: 0) {
+                    if let audio = viewModel.audio, audio.status != .idle {
+                        VStack(spacing: 0) {
+                            Divider()
+                            AudioPlayerBar(
+                                controller: audio,
+                                translationChoices: viewModel.audioTranslationChoices,
+                                selectedTranslationID: viewModel.audioTranslationID,
+                                onSelectTranslation: { id in Task { await viewModel.selectAudioTranslation(id) } }
+                            )
+                            .padding(.horizontal, SWSpacing.l)
+                            .padding(.vertical, SWSpacing.s)
+                        }
+                        .background(.bar)
+                    }
+                }
                 .navigationTitle(detail.passage.reference)
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar { toolbar }
@@ -48,6 +64,7 @@ struct PassageDetailView: View {
             Text("The passage will be bookmarked and filed in this collection.")
         }
         .task { if viewModel.state == .idle { await viewModel.load() } }
+        .onDisappear { viewModel.stopListening() }
     }
 
     @ToolbarContentBuilder

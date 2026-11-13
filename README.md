@@ -22,6 +22,7 @@ A native iOS app for reading, searching and reflecting on scripture from six tra
 - **Library and reader** for each tradition, with original-language text (Sanskrit, Hebrew, Arabic, Pali, Gurmukhi), translations, right-to-left support and adjustable text size.
 - **Universal search** across all traditions using SQLite FTS5, with theme tagging and voice search (on-device speech recognition only).
 - **Verse details** with related passages, sharing and source attribution.
+- **Listen** to passages read aloud by an on-device system voice, with play/pause, progress, speed, voice choice and continuous reading. Only translations whose license permits it are read aloud, and original-language texts never are.
 - **Favorites, collections and reading history**, stored locally with SwiftData.
 - **Ask a question:** answers are built from retrieved passages. Explanations come from Apple's on-device Foundation Models (iOS 26+) and are validated against the passages they cite. With no model available, the app shows the passages alone.
 - **Siri and Shortcuts** through App Intents: daily passage, topic search, open a passage.

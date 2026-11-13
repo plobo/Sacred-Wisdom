@@ -163,7 +163,8 @@ final class AppDependencies {
             loadPage: LoadReaderPageUseCase(repository: library),
             preferences: translationPreferences,
             userData: userData,
-            display: preferences
+            display: preferences,
+            audio: makeAudioController()
         )
     }
 
@@ -173,7 +174,8 @@ final class AppDependencies {
             initialTranslationID: translationID,
             loadDetail: LoadPassageDetailUseCase(scripture: library, related: library),
             preferences: translationPreferences,
-            userData: userData
+            userData: userData,
+            audio: makeAudioController()
         )
     }
 
@@ -189,6 +191,22 @@ final class AppDependencies {
     func makeFavoritesViewModel() -> FavoritesViewModel {
         FavoritesViewModel(loadFavorites: LoadFavoritesUseCase(bookmarks: userData.bookmarks, scripture: library),
                            userData: userData)
+    }
+
+    /// One audio service for the app, so only one passage plays at a time. Under UI testing it is scripted
+    /// (silent, plays each passage in about two seconds; `-ui-testing-audio-no-voice` has no voices).
+    private(set) lazy var audioService: any AudioService = {
+        if configuration.isUITesting {
+            return ScriptedAudioService(voicedLanguages: configuration.audioHasNoVoices ? [] : ["en"],
+                                        duration: .seconds(2))
+        }
+        let session = AudioSessionController()
+        return RoutingAudioService(speech: SystemSpeechAudioService(session: session),
+                                   recordings: RecordedAudioService(session: session))
+    }()
+
+    func makeAudioController() -> AudioPlaybackController {
+        AudioPlaybackController(service: audioService, preferences: preferences)
     }
 
     func makeVoiceSearchViewModel() -> VoiceSearchViewModel {
